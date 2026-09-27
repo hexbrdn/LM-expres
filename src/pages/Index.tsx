@@ -12,6 +12,12 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const PARTNERS = [
+  { src: "/logos/transoflex.png", alt: "Transoflex" },
+  { src: "/logos/go-express-logistics.png", alt: "GO! Express & Logistics" },
+  { src: "/logos/dpd.png", alt: "DPD" },
+];
+
 export default function Index() {
   const { t, i18n } = useTranslation();
   const [typedText, setTypedText] = useState("");
@@ -355,22 +361,30 @@ export default function Index() {
               {t("home.clients.desc")}
             </p>
           </div>
+        </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-10">
-            {[
-              { src: "/logos/transoflex.png", alt: "Transoflex" },
-              { src: "/logos/go-express-logistics.png", alt: "GO! Express & Logistics" },
-              { src: "/logos/dpd.png", alt: "DPD" },
-            ].map((partner) => (
-              <div
-                key={partner.alt}
-                className="flex items-center justify-center h-32 w-64 md:h-40 md:w-80 rounded-2xl bg-surface-light border border-gray-100 p-6 hover:shadow-lg transition-shadow duration-300"
-              >
-                <img
-                  src={partner.src}
-                  alt={partner.alt}
-                  className="max-h-20 md:max-h-24 max-w-full w-auto object-contain"
-                />
+        {/* Logo marquee: the list is rendered twice so the -50% scroll loops seamlessly */}
+        <div className="group relative overflow-hidden py-4 [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+          <div
+            className="flex w-max animate-scroll group-hover:[animation-play-state:paused] motion-reduce:animate-none"
+            style={{ animationDuration: "40s" }}
+          >
+            {[0, 1].map((copy) => (
+              <div key={copy} className="flex" aria-hidden={copy === 1}>
+                {Array.from({ length: 3 }).flatMap((_, round) =>
+                  PARTNERS.map((partner) => (
+                    <div key={`${round}-${partner.alt}`} className="px-4 md:px-5">
+                      <div className="flex items-center justify-center h-32 w-64 md:h-40 md:w-80 rounded-2xl bg-surface-light border border-gray-100 p-6 hover:shadow-lg transition-shadow duration-300">
+                        <img
+                          src={partner.src}
+                          alt={copy === 0 && round === 0 ? partner.alt : ""}
+                          loading="lazy"
+                          className="max-h-20 md:max-h-24 max-w-full w-auto object-contain"
+                        />
+                      </div>
+                    </div>
+                  ))
+                )}
               </div>
             ))}
           </div>
