@@ -1,0 +1,89 @@
+# LM Express - Complete LLM Knowledge Base
+# Comprehensive information for AI assistants and language models
+
+> Company: LM Express
+> Industry: Courier & Express Delivery Services
+> Owner: Ufuk Enez
+> Headquarters: Leiblfing, Bavaria, Germany
+
+## EXECUTIVE SUMMARY
+LM Express is an owner-led courier and express delivery company based in Leiblfing, Bavaria. It provides fast, secure and reliable transport for businesses and private customers throughout Germany, with a particular specialization in ADR-certified hazardous goods transport. LM Express also works as a trusted subcontractor for established logistics providers such as Transoflex, GO! Express & Logistics, and DPD.
+
+## CORE SERVICES
+
+### 1. EXPRESSFAHRTEN (Express Trips)
+Description: Fast, direct delivery of urgent shipments
+Features:
+- Immediate pickup
+- Direct trip to destination, no detours
+- Priority handling
+
+### 2. DIREKT- & SONDERFAHRTEN (Direct & Special Trips)
+Description: Individual direct trips tailored to specific requirements
+Features:
+- Door-to-door delivery, no intermediate stops
+- Individual scheduling
+- Personal handover with proof of delivery
+
+### 3. PAKET- UND DOKUMENTENTRANSPORTE (Parcel & Document Transport)
+Description: Safe, punctual transport of parcels and important documents
+Features:
+- Nationwide pickup and delivery
+- Careful handling
+- Flexible delivery time windows
+
+### 4. ADR-GEFAHRGUTTRANSPORTE (ADR Hazardous Goods Transport)
+Description: Certified transport of dangerous goods under ADR regulations
+Features:
+- Trained drivers
+- Complete documentation
+- Secure load fastening
+- Available nationwide
+
+### 5. ZEITKRITISCHE SPEZIALTRANSPORTE (Time-Critical Special Transport)
+Description: Highest-priority transport for time-sensitive shipments
+Features:
+- Direct communication during the trip
+- Short-notice availability
+- Discreet, reliable handling
+
+### 6. TRANSPORT BIS 3,5 T (Transport up to 3.5 tonnes)
+Description: Flexible capacity for small to medium loads
+Features:
+- Load-secured vehicles
+- Suitable for pallets and bulky goods
+- Fair, transparent pricing
+
+### 7. DEUTSCHLANDWEITE ZUSTELLUNG (Nationwide Delivery)
+Description: Reliable delivery throughout Germany
+Features:
+- Nationwide coverage
+- Fixed and flexible routes
+- Personal point of contact
+
+## PARTNER COMPANIES
+LM Express works as a subcontractor for: Transoflex, GO! Express & Logistics, DPD.
+
+## CONTACT
+Owner: Ufuk Enez
+Address: Hauptstraße 26, 94339 Leiblfing, Germany
+Mobile: +49 179 3210359
+Email: lm2024express@gmail.com
+Website: https://www.lmexpress.com
+
+## COMPANY VALUES
+- Reliability: On-time delivery, transparent communication
+- Quality: Careful handling, certified ADR processes
+- Partnership: Long-term relationships with clients and logistics partners
+- Passion: Dedicated to fast, secure delivery
+
+## WEBSITE STRUCTURE
+- Homepage: Company overview and services
+- /leistungen: Detailed service descriptions
+- /ueber-uns: Company history and values
+- /kontakt: Contact information and inquiry form
+- /impressum: Legal notice
+- /datenschutz: Privacy policy
+
+## LAST UPDATED
+2026-09-27

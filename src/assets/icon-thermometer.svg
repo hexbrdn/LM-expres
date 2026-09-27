@@ -1,0 +1,12 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Thermometer bulb -->
+  <circle cx="60" cy="80" r="12"/>
+  <!-- Thermometer stem -->
+  <rect x="56" y="35" width="8" height="48" rx="4"/>
+  <!-- Liquid fill indicator -->
+  <path d="M 58 72 L 58 60 Q 58 58 60 58 Q 62 58 62 60 L 62 72"/>
+  <!-- Degree marks -->
+  <line x1="50" y1="50" x2="54" y2="50"/>
+  <line x1="50" y1="60" x2="54" y2="60"/>
+  <line x1="50" y1="70" x2="54" y2="70"/>
+</svg>

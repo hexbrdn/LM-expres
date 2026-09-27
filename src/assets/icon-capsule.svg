@@ -1,0 +1,8 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Left half of capsule -->
+  <path d="M 60 35 L 45 35 Q 35 35 35 45 Q 35 60 45 75 L 60 75"/>
+  <!-- Right half of capsule -->
+  <path d="M 60 35 L 75 35 Q 85 35 85 45 Q 85 60 75 75 L 60 75"/>
+  <!-- Middle dividing line -->
+  <line x1="60" y1="35" x2="60" y2="75"/>
+</svg>

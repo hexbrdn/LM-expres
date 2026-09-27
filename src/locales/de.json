@@ -1,0 +1,485 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "about": "Über Uns",
+    "contact": "Kontakt",
+    "quote": "Angebot",
+    "menu": "Menü",
+    "closeMenu": "Menü schließen"
+  },
+  "home": {
+    "hero": {
+      "title": "Express.",
+      "partner": "Ihr Partner für Kurier- & Expressdienste in Deutschland",
+      "words": [
+        "Zuverlässig.",
+        "Pünktlich.",
+        "Sicher.",
+        "Schnell.",
+        "Professionell."
+      ],
+      "subtitle": "LM Express bietet schnelle, sichere und zuverlässige Kurier- und Expresstransporte für Unternehmen und Privatkunden  von Paketen bis zu ADR-Gefahrguttransporten deutschlandweit.",
+      "cta": "Kostenloses Angebot",
+      "phone": "Jetzt anrufen",
+      "customers": "Zufriedene Kunden",
+      "reliability": "Pünktlichkeitsrate",
+      "availability": "24/7 Erreichbar",
+      "coverage": "Liefergebiet",
+      "years": "Jahre Erfahrung"
+    },
+    "services": {
+      "label": "Unsere Expertise",
+      "title": "Professionelle Kurier- & Expresslösungen für jeden Bedarf",
+      "viewAll": "Alle Leistungen ansehen",
+      "moreInfo": "Mehr erfahren",
+      "express": {
+        "title": "Expressfahrten",
+        "desc": "Dringende Sendungen schnell und sicher ans Ziel  ohne Umwege, ohne Wartezeit."
+      },
+      "sonderfahrten": {
+        "title": "Direkt- & Sonderfahrten",
+        "desc": "Individuelle Direktfahrten für Ihre Sendung  von Tür zu Tür, ohne Zwischenstopps."
+      },
+      "paket": {
+        "title": "Paket- und Dokumententransporte",
+        "desc": "Sichere und pünktliche Zustellung von Paketen und wichtigen Dokumenten."
+      },
+      "adr": {
+        "title": "ADR-Gefahrguttransporte",
+        "desc": "Zertifizierter Transport von Gefahrgut nach ADR-Vorschriften  sicher und vorschriftsmäßig."
+      },
+      "zeitkritisch": {
+        "title": "Zeitkritische Spezialtransporte",
+        "desc": "Wenn jede Minute zählt: Spezialtransporte mit höchster Priorität und Zuverlässigkeit."
+      },
+      "transport35": {
+        "title": "Transport bis 3,5 t",
+        "desc": "Flexible Transportkapazität für kleinere bis mittlere Ladungen bis 3,5 Tonnen."
+      },
+      "deutschlandweit": {
+        "title": "Deutschlandweite Zustellung",
+        "desc": "Zuverlässige Zustellung in ganz Deutschland  schnell, verfolgbar und sicher."
+      }
+    },
+    "whyUs": {
+      "label": "Warum LM Express",
+      "title": "Ihr verlässlicher Partner für Kurier & Express",
+      "desc": "Mit Erfahrung und Leidenschaft für Logistik bieten wir schnelle, sichere und zuverlässige Transportlösungen  für Unternehmen und Privatkunden gleichermaßen.",
+      "about": "Mehr über uns",
+      "items": {
+        "reliable": {
+          "title": "Pünktlich & zuverlässig",
+          "desc": "Ihre Sendungen kommen an  termingerecht und sicher."
+        },
+        "insured": {
+          "title": "Vollständig versichert",
+          "desc": "Alle Transporte sind umfassend haftpflichtversichert."
+        },
+        "scalable": {
+          "title": "Skalierbar & flexibel",
+          "desc": "Von der Einzelsendung bis zum Sonderauftrag  wir passen uns an."
+        },
+        "compliant": {
+          "title": "DSGVO-konform",
+          "desc": "Rechtssicherer Datenschutz und transparente Prozesse."
+        }
+      }
+    },
+    "clients": {
+      "label": "Unsere Partner",
+      "title": "Wir arbeiten mit führenden Logistikunternehmen",
+      "inProgress": "In Bearbeitung",
+      "desc": "Als zuverlässiger Subunternehmer sind wir stolz auf unsere Zusammenarbeit mit namhaften Kurier- und Logistikdienstleistern."
+    },
+    "cta": {
+      "ready": "Bereit für Ihren Transport?",
+      "title": "Angebot in 2 Minuten anfragen",
+      "desc": "Kontaktieren Sie uns für ein kostenloses, unverbindliches Angebot.",
+      "button": "Jetzt kontaktieren",
+      "call": "Anrufen"
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "Unsere Identität",
+      "title": "Ihr Partner für",
+      "titleHighlight": "Kurier-Exzellenz.",
+      "desc": "LM Express steht für Geschwindigkeit, Sicherheit und Zuverlässigkeit  bei jeder Fahrt, jedem Paket und jedem Kunden.",
+      "stats": {
+        "partners": "Partner",
+        "deliveries": "Lieferungen",
+        "ontime": "On-Time",
+        "yearsText": "Im Markt etabliert",
+        "years": "Jahre Erfahrung"
+      }
+    },
+    "vision": {
+      "imageText": "Echte Menschen, echte Lösungen.",
+      "imageSub": "Persönlicher Service seit Tag eins.",
+      "label": "Unsere Motivation",
+      "title": "Mehr als nur Transport ",
+      "titleHighlight": "Wir bewegen, was wichtig ist.",
+      "desc1": "LM Express ist aus dem Anspruch entstanden, Kurier- und Expressdienste persönlicher und zuverlässiger zu gestalten. Als Inhaber-geführtes Unternehmen stehen wir mit unserem Namen für jede einzelne Fahrt.",
+      "desc2": "Wir glauben daran, dass jede Sendung wichtig ist  ob Dokument, Paket oder Gefahrgut nach ADR. Wir behandeln jede Sendung mit der Sorgfalt, die sie verdient.",
+      "visionLabel": "Unsere Vision",
+      "visionDesc": "Der verlässlichste Kurier- & Expressdienst in der Region.",
+      "scopeLabel": "Reichweite",
+      "scopeDesc": "Lokaler Fokus, deutschlandweite Zustellung."
+    },
+    "values": {
+      "label": "Fundament",
+      "title": "Werte, die uns tragen",
+      "desc": "Diese Säulen sind der Grundstein für jede Entscheidung, die wir treffen.",
+      "items": {
+        "reliability": {
+          "title": "Zuverlässigkeit",
+          "desc": "Wir halten, was wir versprechen. Pünktliche Lieferungen und transparente Kommunikation sind unser Fundament."
+        },
+        "quality": {
+          "title": "Qualität",
+          "desc": "Gepflegte Fahrzeuge, sorgfältige Handhabung und zertifizierte ADR-Prozesse garantieren höchste Servicequalität."
+        },
+        "partnership": {
+          "title": "Partnerschaft",
+          "desc": "Wir verstehen uns als langfristiger Partner unserer Kunden  nicht als reiner Dienstleister."
+        },
+        "passion": {
+          "title": "Leidenschaft",
+          "desc": "Der Transport ist unsere Leidenschaft. Mit Herzblut sorgen wir täglich für reibungslose Zustellung."
+        }
+      }
+    },
+    "timeline": {
+      "title": "Unsere Reise",
+      "m1": {
+        "title": "Der Anfang",
+        "desc": "Gründung von LM Express in Leiblfing  Die Vision: Schneller, persönlicher Kurierdienst."
+      },
+      "m2": {
+        "title": "Wachstum",
+        "desc": "Aufbau stabiler Partnerschaften mit führenden Kurier- und Logistikunternehmen."
+      },
+      "m3": {
+        "title": "Spezialisierung",
+        "desc": "Erweiterung um ADR-Gefahrguttransporte und zeitkritische Spezialtransporte."
+      },
+      "m4": {
+        "title": "Vertrauen",
+        "desc": "Deutschlandweite Zustellung und zufriedene Stamm- und Partnerkunden."
+      },
+      "m5": {
+        "title": "Zukunft",
+        "desc": "Weiterer Ausbau unserer Flotte und unseres Servicegebiets."
+      }
+    },
+    "cta": {
+      "title": "Bereit für die Partnerschaft?",
+      "desc": "Verbinden Sie Ihr Unternehmen mit einem zuverlässigen Kurierpartner.",
+      "button1": "Anfrage senden",
+      "button2": "Unsere Leistungen"
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Unsere Expertise",
+      "title": "Professionelle Kurier- & Expresslösungen für Sie",
+      "desc": "Von Expressfahrten bis ADR-Gefahrguttransport  LM Express bietet maßgeschneiderte Kurierlösungen deutschlandweit.",
+      "button1": "Jetzt Angebot anfragen",
+      "button2": "Kontakt aufnehmen"
+    },
+    "items": {
+      "express": {
+        "title": "Expressfahrten",
+        "subtitle": "Dringend. Schnell. Sicher.",
+        "desc": "Wenn Zeit kritisch ist, sind wir Ihr Partner. Direkte Expressfahrten für dringende Sendungen deutschlandweit  ohne Umwege.",
+        "f1": "Sofortige Abholung",
+        "f2": "Direktfahrt zum Ziel",
+        "f3": "Echtzeit-Erreichbarkeit",
+        "f4": "Priorisierte Zustellung",
+        "f5": "Flexibel & kurzfristig verfügbar"
+      },
+      "sonderfahrten": {
+        "title": "Direkt- & Sonderfahrten",
+        "subtitle": "Individuell nach Ihren Anforderungen",
+        "desc": "Für besondere Anforderungen bieten wir individuelle Direkt- und Sonderfahrten  ohne Zwischenstopps, exakt nach Ihrem Bedarf.",
+        "f1": "Direktfahrt ohne Umwege",
+        "f2": "Individuelle Terminabstimmung",
+        "f3": "Persönliche Übergabe",
+        "f4": "Quittung & Liefernachweis",
+        "f5": "Geeignet für Sonderaufträge"
+      },
+      "paket": {
+        "title": "Paket- und Dokumententransporte",
+        "subtitle": "Sicher & zuverlässig",
+        "desc": "Ob wichtige Dokumente oder Pakete jeder Größe  wir transportieren Ihre Sendungen sicher und pünktlich.",
+        "f1": "Abholung & Zustellung bundesweit",
+        "f2": "Pakete, Dokumente & Kleinsendungen",
+        "f3": "Sichere Handhabung",
+        "f4": "Sendungsverfolgung auf Anfrage",
+        "f5": "Flexible Lieferzeitfenster"
+      },
+      "adr": {
+        "title": "ADR-Gefahrguttransporte",
+        "subtitle": "Zertifiziert & vorschriftsmäßig",
+        "desc": "Wir transportieren Gefahrgut nach den geltenden ADR-Vorschriften  sicher, dokumentiert und zuverlässig.",
+        "f1": "ADR-konforme Abwicklung",
+        "f2": "Geschultes Fahrpersonal",
+        "f3": "Vollständige Dokumentation",
+        "f4": "Sichere Ladungssicherung",
+        "f5": "Deutschlandweite Verfügbarkeit"
+      },
+      "zeitkritisch": {
+        "title": "Zeitkritische Spezialtransporte",
+        "subtitle": "Wenn jede Minute zählt",
+        "desc": "Für Sendungen mit höchster Priorität bieten wir spezialisierte, zeitkritische Transporte mit voller Aufmerksamkeit.",
+        "f1": "Höchste Priorität",
+        "f2": "Direkte Kommunikation während der Fahrt",
+        "f3": "Kurzfristige Disponibilität",
+        "f4": "Diskrete Abwicklung",
+        "f5": "Zuverlässige Zeitfenster"
+      },
+      "transport35": {
+        "title": "Transport bis 3,5 t",
+        "subtitle": "Flexible Kapazität",
+        "desc": "Für kleinere bis mittlere Ladungen bieten wir flexible Transportkapazität bis 3,5 Tonnen.",
+        "f1": "Ladekapazität bis 3,5 t",
+        "f2": "Ladegesicherte Fahrzeuge",
+        "f3": "Geeignet für Paletten & Sperrgut",
+        "f4": "Flexible Buchung",
+        "f5": "Faire, transparente Preise"
+      },
+      "deutschlandweit": {
+        "title": "Deutschlandweite Zustellung",
+        "subtitle": "Überall in Deutschland",
+        "desc": "Egal wo Ihr Empfänger sitzt  wir liefern zuverlässig in ganz Deutschland.",
+        "f1": "Bundesweite Abdeckung",
+        "f2": "Feste & flexible Touren",
+        "f3": "Zuverlässige Laufzeiten",
+        "f4": "Persönlicher Ansprechpartner",
+        "f5": "Transparente Kommunikation"
+      }
+    },
+    "process": {
+      "label": "Unser Ablauf",
+      "title": "Einfacher Workflow",
+      "s1": {
+        "title": "Buchung",
+        "desc": "Fordern Sie ein Angebot an und buchen Sie Ihre Sendung online oder telefonisch."
+      },
+      "s2": {
+        "title": "Abholung",
+        "desc": "Wir holen Ihre Sendung zur vereinbarten Zeit zuverlässig ab."
+      },
+      "s3": {
+        "title": "Transport",
+        "desc": "Ihre Sendung wird auf dem schnellsten Weg direkt zum Ziel gebracht."
+      },
+      "s4": {
+        "title": "Zustellung",
+        "desc": "Sichere Ankunft am Zielort mit Liefernachweis."
+      }
+    },
+    "cta": {
+      "title": "Individuelle Lösung benötigt?",
+      "desc": "Jeder Auftrag hat besondere Anforderungen. Wir finden gerne die passende Lösung für Ihren Transport.",
+      "button": "Kontaktieren Sie uns"
+    },
+    "button_quote": "Angebot anfragen"
+  },
+  "quote": {
+    "badge": "Sofortiges Angebot",
+    "title": "Angebotsassistent",
+    "subtitle": "Maßgeschneiderte Logistiklösungen in 3 einfachen Schritten.",
+    "steps": ["Service", "Details", "Kontakt"],
+    "services": {
+      "stueckgut": { "label": "Stückgut", "desc": "Teil- & Komplettladungen" },
+      "express": { "label": "Express", "desc": "Same-Day / Next-Day" },
+      "kuehltransport": { "label": "Kühltransport", "desc": "Temperaturkontrolliert" },
+      "kurier": { "label": "Kurier", "desc": "Flexible Kurierfahrten" },
+      "apotheken": { "label": "Apotheken", "desc": "Pharma-Logistik" }
+    },
+    "step1": {
+      "title": "Service auswählen",
+      "subtitle": "Was transportieren wir heute?",
+      "next": "Weiter",
+      "error": "Bitte einen Service auswählen"
+    },
+    "step2": {
+      "title": "Sendungsdetails",
+      "selected": "Ausgewählt:",
+      "pickupLabel": "Abholort",
+      "pickupPlaceholder": "Adresse, PLZ, Ort",
+      "deliveryLabel": "Lieferziel",
+      "deliveryPlaceholder": "Adresse, PLZ, Ort",
+      "weightLabel": "Geschätztes Gewicht (kg)",
+      "weightPlaceholder": "z.B. 500",
+      "volumeLabel": "Volumen / Maße",
+      "volumePlaceholder": "z.B. 2 m³ oder 120x80x100",
+      "palletLabel": "Anzahl Paletten",
+      "palletPlaceholder": "Wie viele?",
+      "climateLabel": "Kühlung erforderlich",
+      "climateDesc": "Temperaturempfindliche Fracht",
+      "notesLabel": "Weitere Anforderungen",
+      "notesPlaceholder": "Verladehinweise, bestimmte Zeiten, etc.",
+      "back": "Zurück",
+      "continue": "Weiter",
+      "errors": {
+        "pickup": "Abholort erforderlich",
+        "delivery": "Lieferort erforderlich",
+        "weight": "Gewicht erforderlich"
+      }
+    },
+    "step3": {
+      "title": "Kontaktdaten",
+      "subtitle": "Fast geschafft! Wir benötigen noch einige Angaben.",
+      "companyLabel": "Firmenname",
+      "companyPlaceholder": "Offizieller Firmenname",
+      "contactLabel": "Ansprechpartner",
+      "contactPlaceholder": "Vor- & Nachname",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "firma@beispiel.de",
+      "phoneLabel": "Telefonnummer",
+      "phonePlaceholder": "+49 (0) ...",
+      "vatLabel": "USt-IdNr. / Steuernummer (Optional)",
+      "vatPlaceholder": "DE123456789",
+      "protectionTitle": "Hinweis zum Datenschutz",
+      "protectionDesc": "Mit Klick auf \"Angebot anfragen\" stimmen Sie zu, dass unser Team Sie bezüglich dieser Sendung kontaktiert. Ihre Daten werden verschlüsselt und gemäß DSGVO verarbeitet.",
+      "back": "Zurück",
+      "submit": "Angebot anfragen",
+      "errors": {
+        "company": "Firmenname erforderlich",
+        "contact": "Ansprechpartner erforderlich",
+        "email": "Ungültige E-Mail",
+        "phone": "Telefonnummer erforderlich"
+      }
+    },
+    "success": {
+      "title": "Anfrage gesendet",
+      "desc": "Wir gleichen Ihre Anfrage mit den besten verfügbaren Optionen ab. Sie erhalten in Kürze eine E-Mail von uns.",
+      "button": "Zurück zur Startseite"
+    }
+  },
+  "contact": {
+    "hero": {
+      "label": "Kontaktieren Sie uns",
+      "title": "Wir sind für Sie da ",
+      "titleHighlight": "Überall.",
+      "desc": "Haben Sie Fragen zu unseren Kurier- und Expressdiensten oder benötigen Sie ein individuelles Angebot? Wir antworten Ihnen in kürzester Zeit."
+    },
+    "form": {
+      "title": "Nachricht senden",
+      "desc": "Füllen Sie das Formular aus, wir melden uns umgehend bei Ihnen.",
+      "name": "Name",
+      "namePlaceholder": "Ihr Name",
+      "email": "E-Mail Adresse",
+      "emailPlaceholder": "beispiel@mail.de",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Wie können wir helfen?",
+      "message": "Ihre Nachricht",
+      "messagePlaceholder": "Schreiben Sie hier Ihre Details...",
+      "submit": "Nachricht senden",
+      "success": "Ihre Nachricht wurde erfolgreich gesendet!",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.",
+      "errors": {
+        "name": "Name ist erforderlich",
+        "email": "Ungültige E-Mail Adresse",
+        "subject": "Betreff ist erforderlich",
+        "message": "Nachricht ist zu kurz (min. 10 Zeichen)"
+      }
+    },
+    "info": {
+      "phone": "Festnetz",
+      "mobile": "Mobiltelefon",
+      "email": "E-Mail",
+      "location": "Standort",
+      "address": "Anschrift",
+      "hours": "Öffnungszeiten"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "desc": "Hier finden Sie schnelle Antworten auf die wichtigsten Fragen.",
+      "q1": "Wie schnell erhalte ich ein Angebot?",
+      "a1": "In der Regel melden wir uns innerhalb kürzester Zeit mit einem individuellen Angebot bei Ihnen  auch kurzfristig.",
+      "q2": "Liefern Sie auch außerhalb Bayerns?",
+      "a2": "Ja, wir liefern deutschlandweit  von Expressfahrten bis zu Sonderaufträgen.",
+      "q3": "Sind meine Sendungen versichert?",
+      "a3": "Ja, alle Transporte sind über unsere Verkehrshaftungsversicherung abgesichert.",
+      "q4": "Transportieren Sie auch Gefahrgut?",
+      "a4": "Ja, wir bieten zertifizierte ADR-Gefahrguttransporte nach den geltenden Vorschriften an."
+    },
+    "cta": {
+      "title": "Bereit für den nächsten Schritt?",
+      "desc": "Kontaktieren Sie uns noch heute für eine unverbindliche Beratung zu Ihrem Transport.",
+      "button1": "Jetzt anrufen",
+      "button2": "E-Mail schreiben"
+    },
+    "whatsappMessage": "Hallo, ich interessiere mich für Ihre Kurier- und Expressdienste und möchte ein Angebot anfragen."
+  },
+  "footer": {
+    "cta": {
+      "title": "Bereit für Ihren Transport?",
+      "desc": "Kontaktieren Sie uns für ein kostenloses, unverbindliches Angebot.",
+      "button": "Jetzt kontaktieren"
+    },
+    "brandDesc": "Kurier- & Expressdienst mit Geschwindigkeit, Sicherheit und Zuverlässigkeit. Ihr vertrauenswürdiger Partner für Express-, Sonder- und ADR-Gefahrguttransporte in Deutschland.",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten.",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz",
+    "labels": {
+      "mobile": "Mobiltelefon",
+      "phone": "Festnetz",
+      "email": "E-Mail",
+      "address": "Adresse"
+    },
+    "servicesList": {
+      "s1": "Expressfahrten",
+      "s2": "Direkt- & Sonderfahrten",
+      "s3": "Paket- & Dokumente",
+      "s4": "ADR-Gefahrgut",
+      "s5": "Zeitkritische Spezialtransporte",
+      "s6": "Transport bis 3,5t",
+      "s7": "Deutschlandweite Zustellung"
+    }
+  },
+  "impressum": {
+    "backHome": "Zurück zur Startseite",
+    "title": "Impressum",
+    "subtitle": "Angaben gemäß § 5 TMG",
+    "contactAddress": "Kontakt & Anschrift",
+    "management": "Inhaber",
+    "managementDesc": "Inhaber: Ufuk Enez",
+    "taxId": "Steuernummern & Identifikation",
+    "taxIdDesc": "USt-IdNr: auf Anfrage\nSteuernummer: auf Anfrage\nZuständiges Finanzamt: auf Anfrage",
+    "contact": "Kontaktmöglichkeiten",
+    "contactDesc": "Mobil: +49 179 3210359\nE-Mail: lm2024express@gmail.com"
+  },
+  "privacy": {
+    "transparency": "Transparenz",
+    "title": "Datenschutzerklärung",
+    "general": {
+      "title": "1. Allgemeines",
+      "desc": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können."
+    },
+    "collection": {
+      "title": "Datenerfassung auf dieser Website",
+      "desc": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt 'Hinweis zur Verantwortlichen Stelle' in dieser Datenschutzerklärung entnehmen."
+    },
+    "rights": {
+      "title": "Ihre Rechte",
+      "desc": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten."
+    },
+    "hosting": {
+      "title": "2. Hosting und Content Delivery Networks (CDN)",
+      "desc": "Wir hosten die Inhalte unserer Website bei folgendem Anbieter:",
+      "external": "Externes Hosting",
+      "externalDesc": "Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln."
+    },
+    "legal": {
+      "title": "3. Ihre gesetzliche Reichweite",
+      "desc": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#FF8C00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Box top face -->
+  <path d="M 28 55 L 42 40 L 78 40 L 92 55"/>
+  <!-- Box front face -->
+  <rect x="28" y="55" width="64" height="45" rx="4"/>
+  <!-- Box back depth lines -->
+  <line x1="42" y1="40" x2="42" y2="55"/>
+  <line x1="78" y1="40" x2="78" y2="55"/>
+  <!-- Box handle/fold line -->
+  <path d="M 42 55 L 60 50 L 78 55"/>
+</svg>
