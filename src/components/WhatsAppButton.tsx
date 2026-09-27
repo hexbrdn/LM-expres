@@ -8,7 +8,7 @@ export default function WhatsAppButton() {
   const whatsappUrl = `https://wa.me/491793210359?text=${message}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-[100] group">
+    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-40 group">
       {/* Pulse Effect */}
       <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20 duration-1000" />
 
@@ -16,8 +16,8 @@ export default function WhatsAppButton() {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="WhatsApp kontaktieren"
-        className="relative flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95"
+        aria-label={t("contact.whatsappAria")}
+        className="relative flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95"
       >
         {/* Official WhatsApp Icon */}
         <svg

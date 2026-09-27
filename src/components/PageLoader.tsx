@@ -1,22 +1,24 @@
 import { useEffect, useState } from "react";
 import { Truck } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function PageLoader() {
+  const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    // Simulate loading progress
+    // Simulate loading progress (~0.5s total)
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(interval);
-          setTimeout(() => setIsLoading(false), 300);
+          setTimeout(() => setIsLoading(false), 100);
           return 100;
         }
-        return prev + 10;
+        return prev + 25;
       });
-    }, 100);
+    }, 80);
 
     return () => clearInterval(interval);
   }, []);
@@ -37,11 +39,11 @@ export default function PageLoader() {
         <div className="relative">
           <div className="absolute inset-0 bg-sky-blue/20 rounded-full blur-2xl animate-pulse" />
           <img
-            src="/lm-express-logo-horizontal.svg"
+            src="/lm-express-logo.png"
             alt="LM Express"
-            width="312"
-            height="80"
-            className="h-20 w-auto object-contain relative z-10 animate-fade-in"
+            width="512"
+            height="379"
+            className="h-32 w-auto object-contain relative z-10 animate-fade-in"
           />
         </div>
 
@@ -58,7 +60,7 @@ export default function PageLoader() {
 
         {/* Loading text */}
         <div className="text-center">
-          <p className="text-white text-sm font-semibold mb-2">Wird geladen...</p>
+          <p className="text-white text-sm font-semibold mb-2">{t("loader.loading")}</p>
           <p className="text-white/50 text-xs">{progress}%</p>
         </div>
       </div>

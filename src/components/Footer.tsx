@@ -1,14 +1,18 @@
-﻿import { Link } from "react-router-dom";
-import { Truck, Phone, Mail, MapPin, ArrowRight, Package, Zap, Route, AlertTriangle, Timer, MapPinned } from "lucide-react";
+﻿import { Link, useLocation } from "react-router-dom";
+import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
+  const { pathname } = useLocation();
+  // These pages already end with their own CTA block
+  const showCta = pathname !== "/" && pathname !== "/kontakt";
 
   return (
     <footer className="bg-navy-deep text-white overflow-hidden">
       {/* CTA Strip */}
+      {showCta && (
       <div className="relative bg-gradient-to-r from-sky-blue to-sky-blue-light overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
         <div className="container-main py-12 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
@@ -29,6 +33,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
+      )}
 
       {/* Main footer */}
       <div className="container-main py-20">
@@ -37,11 +42,11 @@ export default function Footer() {
           <div className="space-y-8">
             <Link to="/" className="flex items-center gap-3 group transition-transform duration-300 hover:scale-[1.05]">
               <img
-                src="/lm-express-logo-horizontal.svg"
+                src="/lm-express-logo.png"
                 alt="LM Express - Kurier & Expressdienst"
-                width="250"
-                height="64"
-                className="h-16 w-auto object-contain drop-shadow-lg filter brightness-110"
+                width="512"
+                height="379"
+                className="h-24 w-auto object-contain drop-shadow-lg filter brightness-110"
               />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed font-normal">
@@ -56,18 +61,18 @@ export default function Footer() {
             </h4>
             <ul className="grid grid-cols-1 gap-3">
               {[
-                { icon: Zap, label: t("footer.servicesList.s1") },
-                { icon: Route, label: t("footer.servicesList.s2") },
-                { icon: Package, label: t("footer.servicesList.s3") },
-                { icon: AlertTriangle, label: t("footer.servicesList.s4") },
-                { icon: Timer, label: t("footer.servicesList.s5") },
-                { icon: Truck, label: t("footer.servicesList.s6") },
-                { icon: MapPinned, label: t("footer.servicesList.s7") },
-              ].map(({ icon: Icon, label }) => (
-                <li key={label}>
-                  <Link to="/leistungen" className="text-white/50 hover:text-white transition-colors text-sm font-medium flex items-center gap-3 group">
-                    <Icon className="w-4 h-4 text-sky-blue" />
-                    {label}
+                { icon: "/icons/service-express.png", key: "express", id: "expressfahrten" },
+                { icon: "/icons/service-sonderfahrten.png", key: "sonderfahrten", id: "direkt-sonderfahrten" },
+                { icon: "/icons/service-paket.png", key: "paket", id: "paket-dokumente" },
+                { icon: "/icons/service-adr.png", key: "adr", id: "adr-gefahrgut" },
+                { icon: "/icons/service-zeitkritisch.png", key: "zeitkritisch", id: "zeitkritische-spezialtransporte" },
+                { icon: "/icons/service-transport35.png", key: "transport35", id: "transport-bis-35t" },
+                { icon: "/icons/service-deutschlandweit.png", key: "deutschlandweit", id: "deutschlandweite-zustellung" },
+              ].map(({ icon, key, id }) => (
+                <li key={key}>
+                  <Link to={`/leistungen#${id}`} className="text-white/50 hover:text-white transition-colors text-sm font-medium flex items-center gap-3 group">
+                    <img src={icon} alt="" aria-hidden="true" loading="lazy" className="w-7 h-7 object-contain" />
+                    {t(`services.items.${key}.title`)}
                   </Link>
                 </li>
               ))}
@@ -124,8 +129,8 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="border-t border-white/5 py-8">
-        <div className="container-main flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium tracking-wide text-white/30">
+      <div className="border-t border-white/5 pt-8 pb-24 md:pb-8">
+        <div className="container-main md:pr-24 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium tracking-wide text-white/30">
           <p>© {currentYear} LM Express. {t("footer.rights")}</p>
           <div className="flex items-center gap-6">
             <Link to="/impressum" className="hover:text-white transition-colors">{t("footer.impressum")}</Link>

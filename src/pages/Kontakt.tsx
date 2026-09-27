@@ -1,5 +1,6 @@
 ﻿import { useState } from "react";
-import { Phone, Mail, MapPin, Clock, MessageSquare, Send, Loader2, CheckCircle2 } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Phone, Mail, MapPin, Clock, MessageSquare, Send, Loader2, CheckCircle2, HelpCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -18,7 +19,7 @@ type ContactForm = {
 };
 
 export default function Kontakt() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -127,6 +128,7 @@ export default function Kontakt() {
                       <Label htmlFor="name" className="text-navy-deep font-bold ml-1">{t("contact.form.name")}</Label>
                       <Input
                         id="name"
+                        required
                         {...register("name")}
                         placeholder={t("contact.form.namePlaceholder")}
                         className={`h-14 rounded-2xl bg-surface-light ${errors.name ? 'border-red-500' : 'border-none'} focus-visible:ring-sky-blue/20`}
@@ -138,6 +140,7 @@ export default function Kontakt() {
                       <Input
                         id="email"
                         type="email"
+                        required
                         {...register("email")}
                         placeholder={t("contact.form.emailPlaceholder")}
                         className={`h-14 rounded-2xl bg-surface-light ${errors.email ? 'border-red-500' : 'border-none'} focus-visible:ring-sky-blue/20`}
@@ -150,6 +153,7 @@ export default function Kontakt() {
                     <Label htmlFor="subject" className="text-navy-deep font-bold ml-1">{t("contact.form.subject")}</Label>
                     <Input
                       id="subject"
+                      required
                       {...register("subject")}
                       placeholder={t("contact.form.subjectPlaceholder")}
                       className={`h-14 rounded-2xl bg-surface-light ${errors.subject ? 'border-red-500' : 'border-none'} focus-visible:ring-sky-blue/20`}
@@ -161,12 +165,20 @@ export default function Kontakt() {
                     <Label htmlFor="message" className="text-navy-deep font-bold ml-1">{t("contact.form.message")}</Label>
                     <Textarea
                       id="message"
+                      required
                       {...register("message")}
                       placeholder={t("contact.form.messagePlaceholder")}
                       className={`min-h-[160px] rounded-2xl bg-surface-light ${errors.message ? 'border-red-500' : 'border-none'} focus-visible:ring-sky-blue/20 p-5 resize-none`}
                     />
                     {errors.message && <span className="text-red-500 text-[10px] font-bold uppercase ml-1 block">{errors.message.message}</span>}
                   </div>
+
+                  <p className="text-xs text-navy-deep/50 leading-relaxed ml-1">
+                    {t("contact.form.privacyNote")}{" "}
+                    <Link to="/datenschutz" className="text-sky-blue font-semibold underline underline-offset-2 hover:text-sky-blue-dark">
+                      {t("contact.form.privacyLink")}
+                    </Link>.
+                  </p>
 
                   {isSuccess && (
                     <div className="flex items-center gap-3 p-4 rounded-xl bg-green-50 border border-green-200 text-green-700 animate-fade-in">
@@ -184,7 +196,7 @@ export default function Kontakt() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full h-16 rounded-2xl bg-navy-deep text-white hover:bg-navy-mid text-lg font-bold shadow-xl shadow-navy-deep/20 transition-all active:scale-[0.98] disabled:opacity-70"
+                    className="w-full h-14 rounded-full bg-gradient-to-r from-sky-blue to-sky-blue-light text-white hover:shadow-sky text-base font-semibold shadow-xl transition-all active:scale-[0.98] disabled:opacity-70"
                   >
                     {isSubmitting ? (
                       <Loader2 className="animate-spin w-5 h-5 mx-auto" />
@@ -217,9 +229,9 @@ export default function Kontakt() {
                     <div className="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center group-hover:bg-sky-blue transition-colors">
                       <Mail className="w-6 h-6 text-sky-blue group-hover:text-white" />
                     </div>
-                    <div className="break-all">
+                    <div className="min-w-0 break-words">
                       <span className="block text-[10px] font-black uppercase tracking-widest text-navy-deep/30 mb-1">{t("contact.info.email")}</span>
-                      <span className="text-navy-deep font-bold text-lg">lm2024express@gmail.com</span>
+                      <span className="text-navy-deep font-bold text-base sm:text-lg">lm2024express<wbr />@gmail.com</span>
                     </div>
                   </div>
                 </a>
@@ -246,11 +258,11 @@ export default function Kontakt() {
                     <span className="block text-[10px] font-black uppercase tracking-widest text-white/30 mb-2">{t("contact.info.hours")}</span>
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <span className="block text-sky-blue font-bold">Mo–Fr</span>
+                        <span className="block text-sky-blue font-bold">{t("contact.info.weekdays")}</span>
                         <span className="text-sm opacity-60">07:00 – 19:00</span>
                       </div>
                       <div>
-                        <span className="block text-sky-blue font-bold">Sa–So</span>
+                        <span className="block text-sky-blue font-bold">{t("contact.info.weekend")}</span>
                         <span className="text-sm opacity-60">08:00 – 16:00</span>
                       </div>
                     </div>
@@ -258,12 +270,12 @@ export default function Kontakt() {
 
                   <div className="h-48 rounded-2xl overflow-hidden grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700">
                     <iframe
-                      src="https://www.google.com/maps?q=Hauptstra%C3%9Fe+26%2C+94339+Leiblfing&output=embed"
+                      src={`https://www.google.com/maps?q=Hauptstra%C3%9Fe+26%2C+94339+Leiblfing&hl=${i18n.language}&output=embed`}
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
                       loading="lazy"
-                      title="LM Express Standort"
+                      title={t("contact.info.mapTitle")}
                     />
                   </div>
                 </div>
@@ -302,7 +314,7 @@ export default function Kontakt() {
             ].map((item, idx) => (
               <div key={idx} className="bg-white p-10 rounded-[2rem] border border-navy-deep/5 transition-all hover:border-sky-blue/20">
                 <h3 className="text-lg font-bold text-navy-deep mb-4 flex gap-3 text-left">
-                  <span className="text-sky-blue">Q.</span> {item.q}
+                  <HelpCircle className="w-5 h-5 text-sky-blue shrink-0 mt-0.5" aria-hidden="true" /> {item.q}
                 </h3>
                 <p className="text-navy-deep/60 text-sm leading-relaxed text-left pl-7">
                   {item.a}
@@ -319,10 +331,10 @@ export default function Kontakt() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">{t("contact.cta.title")}</h2>
           <p className="text-white/40 text-lg mb-12 max-w-2xl mx-auto">{t("contact.cta.desc")}</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button asChild className="h-16 px-12 rounded-2xl bg-sky-blue text-white hover:bg-sky-blue-light font-bold text-lg transition-all active:scale-95 shadow-xl shadow-sky-blue/20">
+            <Button asChild className="h-14 px-10 rounded-full bg-gradient-to-r from-sky-blue to-sky-blue-light text-white hover:shadow-sky text-base font-semibold">
               <a href="tel:+491793210359">{t("contact.cta.button1")}</a>
             </Button>
-            <Button asChild variant="outline" className="h-16 px-12 rounded-2xl border-white/20 bg-white/5 text-white backdrop-blur-md hover:bg-white/10 font-bold text-lg transition-all">
+            <Button asChild variant="outline" className="h-14 px-10 rounded-full border-2 border-white/30 bg-white/5 backdrop-blur-md text-white hover:bg-white/10 text-base font-semibold">
               <a href="mailto:lm2024express@gmail.com">{t("contact.cta.button2")}</a>
             </Button>
           </div>

@@ -3,25 +3,17 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowRight,
-  Package,
-  Zap,
-  Route,
-  AlertTriangle,
-  Timer,
-  MapPinned,
   CheckCircle2,
   Clock,
   Shield,
   TrendingUp,
   Phone,
   Globe2,
-  Truck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Index() {
   const { t, i18n } = useTranslation();
-  const logoContainerRef = useRef<HTMLDivElement>(null);
   const [typedText, setTypedText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -78,61 +70,54 @@ export default function Index() {
 
   const services = [
     {
-      icon: Zap,
+      icon: "/icons/service-express.png",
       key: "express",
       id: "expressfahrten",
       title: t("home.services.express.title"),
       desc: t("home.services.express.desc"),
     },
     {
-      icon: Route,
+      icon: "/icons/service-sonderfahrten.png",
       key: "sonderfahrten",
       id: "direkt-sonderfahrten",
       title: t("home.services.sonderfahrten.title"),
       desc: t("home.services.sonderfahrten.desc"),
     },
     {
-      icon: Package,
+      icon: "/icons/service-paket.png",
       key: "paket",
       id: "paket-dokumente",
       title: t("home.services.paket.title"),
       desc: t("home.services.paket.desc"),
     },
     {
-      icon: AlertTriangle,
+      icon: "/icons/service-adr.png",
       key: "adr",
       id: "adr-gefahrgut",
       title: t("home.services.adr.title"),
       desc: t("home.services.adr.desc"),
     },
     {
-      icon: Timer,
+      icon: "/icons/service-zeitkritisch.png",
       key: "zeitkritisch",
       id: "zeitkritische-spezialtransporte",
       title: t("home.services.zeitkritisch.title"),
       desc: t("home.services.zeitkritisch.desc"),
     },
     {
-      icon: Truck,
+      icon: "/icons/service-transport35.png",
       key: "transport35",
       id: "transport-bis-35t",
       title: t("home.services.transport35.title"),
       desc: t("home.services.transport35.desc"),
     },
     {
-      icon: MapPinned,
+      icon: "/icons/service-deutschlandweit.png",
       key: "deutschlandweit",
       id: "deutschlandweite-zustellung",
       title: t("home.services.deutschlandweit.title"),
       desc: t("home.services.deutschlandweit.desc"),
     },
-  ];
-
-  const trustStats = [
-    { value: "500+", label: t("home.hero.customers"), icon: Globe2 },
-    { value: "98%", label: t("home.hero.reliability"), icon: CheckCircle2 },
-    { value: "24/7", label: t("home.hero.availability"), icon: Clock },
-    { value: "15+", label: t("home.hero.years"), icon: TrendingUp },
   ];
 
   const whyUs = [
@@ -162,44 +147,6 @@ export default function Index() {
     },
   ];
 
-  // Center detection for logos
-  useEffect(() => {
-    const container = logoContainerRef.current;
-    if (!container) return;
-
-    const updateCenterLogos = () => {
-      const containerRect = container.getBoundingClientRect();
-      const centerX = containerRect.left + containerRect.width / 2;
-      const logos = container.querySelectorAll('.logo-item');
-
-      logos.forEach((logo) => {
-        const logoRect = logo.getBoundingClientRect();
-        const logoCenter = logoRect.left + logoRect.width / 2;
-        const distanceFromCenter = Math.abs(centerX - logoCenter);
-
-        // If logo is within 150px of center, make it colorful
-        if (distanceFromCenter < 150) {
-          logo.classList.add('in-center');
-        } else {
-          logo.classList.remove('in-center');
-        }
-      });
-    };
-
-    // Update on animation frame for smooth detection
-    let animationFrameId: number;
-    const animate = () => {
-      updateCenterLogos();
-      animationFrameId = requestAnimationFrame(animate);
-    };
-
-    animationFrameId = requestAnimationFrame(animate);
-
-    return () => {
-      cancelAnimationFrame(animationFrameId);
-    };
-  }, []);
-
   return (
     <main className="bg-white">
       {/*  HERO SECTION - Modern Corporate Style  */}
@@ -211,10 +158,10 @@ export default function Index() {
             loop
             muted
             playsInline
-            poster="/hero-poster.png"
+            poster="/hero-poster.jpg?v=3"
             className="w-full h-full object-cover"
           >
-            <source src="/background.mp4" type="video/mp4" />
+            <source src="/background.mp4?v=3" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/95 via-navy-deep/70 to-transparent" />
         </div>
@@ -246,7 +193,7 @@ export default function Index() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button asChild className="button-modern h-14 px-8 bg-gradient-to-r from-sky-blue to-sky-blue-light text-white hover:shadow-sky text-base font-semibold shadow-xl">
-                <Link to="/kontakt">
+                <Link to="/angebot">
                   {t("home.hero.cta")} <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
@@ -273,7 +220,7 @@ export default function Index() {
                   <CheckCircle2 className="w-7 h-7 text-sky-blue" />
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white">98%</div>
+                  <div className="text-3xl font-bold text-white">100%</div>
                   <div className="text-sm text-white/60">{t("home.hero.reliability")}</div>
                 </div>
               </div>
@@ -309,19 +256,17 @@ export default function Index() {
             <h2 className="section-heading text-navy-deep mb-6">
               {t("home.services.title")}
             </h2>
-            <p className="text-navy-deep/60 text-lg font-normal max-w-2xl mx-auto">
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {services.map(({ icon: Icon, key, id, title, desc }) => (
+            {services.map(({ icon, key, id, title, desc }) => (
               <Link
                 key={key}
                 to={`/leistungen#${id}`}
                 className="group card-modern hover:border-sky-blue/30"
               >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-sky-blue to-sky-blue-light shadow-sky flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                  <Icon className="w-8 h-8 text-white" />
+                <div className="w-20 h-20 rounded-2xl bg-navy-deep shadow-sky flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                  <img src={icon} alt="" aria-hidden="true" loading="lazy" className="w-16 h-16 object-contain" />
                 </div>
                 <h3 className="font-bold text-xl text-navy-deep mb-3 group-hover:text-sky-blue transition-colors">
                   {title}
@@ -419,12 +364,12 @@ export default function Index() {
             ].map((partner) => (
               <div
                 key={partner.alt}
-                className="flex items-center justify-center h-24 w-48 rounded-2xl bg-surface-light border border-gray-100 p-6 hover:shadow-lg transition-shadow duration-300"
+                className="flex items-center justify-center h-32 w-64 md:h-40 md:w-80 rounded-2xl bg-surface-light border border-gray-100 p-6 hover:shadow-lg transition-shadow duration-300"
               >
                 <img
                   src={partner.src}
                   alt={partner.alt}
-                  className="max-h-12 w-auto object-contain"
+                  className="max-h-20 md:max-h-24 max-w-full w-auto object-contain"
                 />
               </div>
             ))}

@@ -4,10 +4,10 @@
     "services": "Services",
     "about": "About Us",
     "contact": "Contact",
-    "quote": "Quote",
     "menu": "Menu",
     "closeMenu": "Close Menu",
-    "call": "Call"
+    "openMenu": "Open Menu",
+    "selectLanguage": "Select language"
   },
   "home": {
     "hero": {
@@ -20,13 +20,10 @@
         "Quickly.",
         "Professionally."
       ],
-      "subtitle": "LM Express offers fast, safe and reliable courier and express transport for businesses and private customers  from parcels to ADR hazardous goods transport nationwide.",
+      "subtitle": "LM Express offers fast, safe and reliable courier and express transport for businesses and private customers – from parcels to ADR hazardous goods transport nationwide.",
       "cta": "Free Quote",
-      "phone": "Call Now",
       "customers": "Satisfied Customers",
       "reliability": "On-Time Rate",
-      "availability": "24/7 Available",
-      "coverage": "Delivery Area",
       "years": "Years of Experience"
     },
     "services": {
@@ -36,11 +33,11 @@
       "moreInfo": "Learn more",
       "express": {
         "title": "Express Trips",
-        "desc": "Urgent shipments delivered quickly and safely  no detours, no waiting."
+        "desc": "Urgent shipments delivered quickly and safely – no detours, no waiting."
       },
       "sonderfahrten": {
         "title": "Direct & Special Trips",
-        "desc": "Individual direct trips for your shipment  door to door, no stops in between."
+        "desc": "Individual direct trips for your shipment – door to door, no stops in between."
       },
       "paket": {
         "title": "Parcel & Document Transport",
@@ -48,7 +45,7 @@
       },
       "adr": {
         "title": "ADR Hazardous Goods Transport",
-        "desc": "Certified transport of dangerous goods under ADR regulations  safe and compliant."
+        "desc": "Certified transport of dangerous goods under ADR regulations – safe and compliant."
       },
       "zeitkritisch": {
         "title": "Time-Critical Special Transport",
@@ -60,26 +57,26 @@
       },
       "deutschlandweit": {
         "title": "Nationwide Delivery",
-        "desc": "Reliable delivery throughout Germany  fast, trackable and secure."
+        "desc": "Reliable delivery throughout Germany – fast, trackable and secure."
       }
     },
     "whyUs": {
       "label": "Why LM Express",
       "title": "Your reliable partner for courier & express",
-      "desc": "With experience and a passion for logistics, we offer fast, safe and reliable transport solutions  for businesses and private customers alike.",
+      "desc": "With experience and a passion for logistics, we offer fast, safe and reliable transport solutions – for businesses and private customers alike.",
       "about": "More about us",
       "items": {
         "reliable": {
           "title": "Punctual & reliable",
-          "desc": "Your shipments arrive  on time and safely."
+          "desc": "Your shipments arrive – on time and safely."
         },
         "insured": {
           "title": "Fully insured",
-          "desc": "All transports are comprehensively liability insured."
+          "desc": "All transports are covered by our carrier liability insurance."
         },
         "scalable": {
           "title": "Scalable & flexible",
-          "desc": "From single shipments to special assignments  we adapt to your needs."
+          "desc": "From single shipments to special assignments – we adapt to your needs."
         },
         "compliant": {
           "title": "GDPR-compliant",
@@ -90,12 +87,10 @@
     "clients": {
       "label": "Our Partners",
       "title": "We work with leading logistics companies",
-      "inProgress": "In Progress",
       "desc": "As a reliable subcontractor, we are proud of our collaboration with renowned courier and logistics providers."
     },
     "cta": {
       "ready": "Ready for your transport?",
-      "title": "Request a quote in 2 minutes",
       "desc": "Contact us for a free, non-binding quote.",
       "button": "Contact now",
       "call": "Call"
@@ -106,11 +101,9 @@
       "label": "Our Identity",
       "title": "Your Partner for",
       "titleHighlight": "Courier Excellence.",
-      "desc": "LM Express stands for speed, safety and reliability  on every trip, every parcel, and every customer.",
+      "desc": "LM Express stands for speed, safety and reliability – on every trip, every parcel, and every customer.",
       "stats": {
-        "partners": "Partners",
         "deliveries": "Deliveries",
-        "ontime": "On-Time",
         "yearsText": "Established in market",
         "years": "Years of Experience"
       }
@@ -119,10 +112,10 @@
       "imageText": "Real people, real solutions.",
       "imageSub": "Personal service since day one.",
       "label": "Our Motivation",
-      "title": "More than just transport ",
+      "title": "More than just transport –",
       "titleHighlight": "We move what matters.",
       "desc1": "LM Express was founded to make courier and express services more personal and reliable. As an owner-led business, we put our name behind every single trip.",
-      "desc2": "We believe every shipment matters  whether it's a document, a parcel, or ADR hazardous goods. We treat every shipment with the care it deserves.",
+      "desc2": "We believe every shipment matters – whether it's a document, a parcel, or ADR hazardous goods. We treat every shipment with the care it deserves.",
       "visionLabel": "Our Vision",
       "visionDesc": "The most reliable courier & express service in the region.",
       "scopeLabel": "Reach",
@@ -143,7 +136,7 @@
         },
         "partnership": {
           "title": "Partnership",
-          "desc": "We see ourselves as a long-term partner for our clients  not just a service provider."
+          "desc": "We see ourselves as a long-term partner for our clients – not just a service provider."
         },
         "passion": {
           "title": "Passion",
@@ -155,7 +148,7 @@
       "title": "Our Journey",
       "m1": {
         "title": "The Beginning",
-        "desc": "LM Express founded in Leiblfing  The vision: a faster, more personal courier service."
+        "desc": "LM Express founded in Leiblfing – The vision: a faster, more personal courier service."
       },
       "m2": {
         "title": "Growth",
@@ -172,7 +165,8 @@
       "m5": {
         "title": "Future",
         "desc": "Further growth of our fleet and service area."
-      }
+      },
+      "today": "Today"
     },
     "cta": {
       "title": "Ready for a partnership?",
@@ -185,7 +179,7 @@
     "hero": {
       "label": "Our Expertise",
       "title": "Professional courier & express solutions for you",
-      "desc": "From express trips to ADR hazardous goods transport  LM Express offers tailored courier solutions nationwide.",
+      "desc": "From express trips to ADR hazardous goods transport – LM Express offers tailored courier solutions nationwide.",
       "button1": "Request Quote Now",
       "button2": "Contact Us"
     },
@@ -193,7 +187,7 @@
       "express": {
         "title": "Express Trips",
         "subtitle": "Urgent. Fast. Secure.",
-        "desc": "When time is critical, we are your partner. Direct express trips for urgent shipments nationwide  no detours.",
+        "desc": "When time is critical, we are your partner. Direct express trips for urgent shipments nationwide – no detours.",
         "f1": "Immediate pickup",
         "f2": "Direct trip to destination",
         "f3": "Real-time availability",
@@ -203,7 +197,7 @@
       "sonderfahrten": {
         "title": "Direct & Special Trips",
         "subtitle": "Tailored to your requirements",
-        "desc": "For special requirements, we offer individual direct and special trips  no stops in between, exactly to your needs.",
+        "desc": "For special requirements, we offer individual direct and special trips – no stops in between, exactly to your needs.",
         "f1": "Direct trip without detours",
         "f2": "Individual scheduling",
         "f3": "Personal handover",
@@ -213,7 +207,7 @@
       "paket": {
         "title": "Parcel & Document Transport",
         "subtitle": "Safe & reliable",
-        "desc": "Whether important documents or parcels of any size  we transport your shipments safely and on time.",
+        "desc": "Whether important documents or parcels of any size – we transport your shipments safely and on time.",
         "f1": "Nationwide pickup & delivery",
         "f2": "Parcels, documents & small shipments",
         "f3": "Careful handling",
@@ -223,7 +217,7 @@
       "adr": {
         "title": "ADR Hazardous Goods Transport",
         "subtitle": "Certified & compliant",
-        "desc": "We transport hazardous goods under applicable ADR regulations  safely, documented, and reliably.",
+        "desc": "We transport hazardous goods under applicable ADR regulations – safely, documented, and reliably.",
         "f1": "ADR-compliant handling",
         "f2": "Trained drivers",
         "f3": "Complete documentation",
@@ -253,7 +247,7 @@
       "deutschlandweit": {
         "title": "Nationwide Delivery",
         "subtitle": "Anywhere in Germany",
-        "desc": "No matter where your recipient is located  we deliver reliably throughout Germany.",
+        "desc": "No matter where your recipient is located – we deliver reliably throughout Germany.",
         "f1": "Nationwide coverage",
         "f2": "Fixed & flexible routes",
         "f3": "Reliable transit times",
@@ -266,7 +260,7 @@
       "title": "Simple Workflow",
       "s1": {
         "title": "Booking",
-        "desc": "Request a quote and book your shipment online or by phone."
+        "desc": "Request a quote and book your shipment by phone."
       },
       "s2": {
         "title": "Pickup",
@@ -293,13 +287,6 @@
     "title": "Custom Quote Engine",
     "subtitle": "Tailored logistics solutions in 3 simple steps.",
     "steps": ["Service", "Details", "Contact"],
-    "services": {
-      "stueckgut": { "label": "LTL Freight", "desc": "Partial & full loads" },
-      "express": { "label": "Express", "desc": "Same-Day / Next-Day" },
-      "kuehltransport": { "label": "Cooling", "desc": "Temperature controlled" },
-      "kurier": { "label": "Courier", "desc": "Flexible courier trips" },
-      "apotheken": { "label": "Pharmacy", "desc": "Pharma logistics" }
-    },
     "step1": {
       "title": "Select Service Type",
       "subtitle": "What are we moving today?",
@@ -319,8 +306,6 @@
       "volumePlaceholder": "e.g. 2 m³ or 120x80x100",
       "palletLabel": "Pallet Count",
       "palletPlaceholder": "How many?",
-      "climateLabel": "Climate Control Required",
-      "climateDesc": "Temperature sensitive cargo",
       "notesLabel": "Additional Requirements",
       "notesPlaceholder": "Loading instructions, specific times, etc.",
       "back": "Back",
@@ -364,7 +349,7 @@
   "contact": {
     "hero": {
       "label": "Contact us",
-      "title": "We are here for you ",
+      "title": "We are here for you –",
       "titleHighlight": "Everywhere.",
       "desc": "Do you have questions about our courier and express services or need a customized quote? We will reply to you shortly."
     },
@@ -382,6 +367,8 @@
       "submit": "Send Message",
       "success": "Your message has been sent successfully!",
       "error": "An error occurred. Please try again later.",
+      "privacyNote": "By submitting, you agree that your details will be used to process your request. For more information, see our",
+      "privacyLink": "Privacy Policy",
       "errors": {
         "name": "Name is required",
         "email": "Invalid email address",
@@ -390,20 +377,22 @@
       }
     },
     "info": {
-      "phone": "Landline",
       "mobile": "Mobile phone",
       "email": "Email",
       "location": "Location",
       "address": "Address",
-      "hours": "Opening Hours"
+      "hours": "Opening Hours",
+      "weekdays": "Mon–Fri",
+      "weekend": "Sat–Sun",
+      "mapTitle": "LM Express location"
     },
     "faq": {
       "title": "Frequently asked questions",
       "desc": "Find quick answers to the most important questions here.",
       "q1": "How fast will I receive a quote?",
-      "a1": "We usually get back to you with a tailored quote in a very short time  even on short notice.",
+      "a1": "We usually get back to you with a tailored quote in a very short time – even on short notice.",
       "q2": "Do you deliver outside Bavaria?",
-      "a2": "Yes, we deliver nationwide  from express trips to special assignments.",
+      "a2": "Yes, we deliver nationwide – from express trips to special assignments.",
       "q3": "Are my shipments insured?",
       "a3": "Yes, all transports are covered by our carrier liability insurance.",
       "q4": "Do you also transport hazardous goods?",
@@ -415,7 +404,8 @@
       "button1": "Call now",
       "button2": "Write an email"
     },
-    "whatsappMessage": "Hello, I am interested in your courier and express services and would like to request a quote."
+    "whatsappMessage": "Hello, I am interested in your courier and express services and would like to request a quote.",
+    "whatsappAria": "Contact via WhatsApp"
   },
   "footer": {
     "cta": {
@@ -431,27 +421,24 @@
     "privacy": "Privacy Policy",
     "labels": {
       "mobile": "Mobile phone",
-      "phone": "Landline",
       "email": "Email",
       "address": "Address"
-    },
-    "servicesList": {
-      "s1": "Express Trips",
-      "s2": "Direct & Special Trips",
-      "s3": "Parcels & Documents",
-      "s4": "ADR Hazardous Goods",
-      "s5": "Time-Critical Special Transport",
-      "s6": "Transport up to 3.5t",
-      "s7": "Nationwide Delivery"
     }
+  },
+  "notFound": {
+    "label": "Page not found",
+    "desc": "The page you are looking for does not exist or has been moved.",
+    "button": "Back to Home"
+  },
+  "loader": {
+    "loading": "Loading..."
   },
   "impressum": {
     "backHome": "Back to Home",
     "title": "Legal Notice",
-    "subtitle": "Information according to § 5 TMG (German Telemedia Act)",
+    "subtitle": "Information according to § 5 DDG (German Digital Services Act)",
     "contactAddress": "Contact & Address",
     "management": "Owner",
-    "managementDesc": "Owner: Ufuk Enez",
     "taxId": "Tax Identification",
     "taxIdDesc": "VAT ID: available on request\nTax Number: available on request\nResponsible Tax Office: available on request",
     "contact": "Contact Information",

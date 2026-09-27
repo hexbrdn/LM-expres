@@ -4,10 +4,10 @@
     "services": "Hizmetler",
     "about": "Hakkımızda",
     "contact": "İletişim",
-    "quote": "Teklif Al",
     "menu": "Menü",
     "closeMenu": "Menüyü Kapat",
-    "call": "Ara"
+    "openMenu": "Menüyü Aç",
+    "selectLanguage": "Dil seçin"
   },
   "home": {
     "hero": {
@@ -22,11 +22,8 @@
       ],
       "subtitle": "LM Express, işletmeler ve özel müşteriler için ülke çapında paketlerden ADR tehlikeli madde taşımacılığına kadar hızlı, güvenli ve güvenilir kurye ve ekspres taşımacılık hizmeti sunar.",
       "cta": "Ücretsiz Teklif",
-      "phone": "Hemen Ara",
       "customers": "Memnun Müşteri",
       "reliability": "Zamanında Teslimat Oranı",
-      "availability": "7/24 Hizmet",
-      "coverage": "Teslimat Alanı",
       "years": "Yıllık Tecrübe"
     },
     "services": {
@@ -36,11 +33,11 @@
       "moreInfo": "Daha fazla bilgi",
       "express": {
         "title": "Ekspres Seferler",
-        "desc": "Acil gönderiler hızlı ve güvenli şekilde teslim edilir  sapma yok, bekleme yok."
+        "desc": "Acil gönderiler hızlı ve güvenli şekilde teslim edilir – sapma yok, bekleme yok."
       },
       "sonderfahrten": {
         "title": "Direkt ve Özel Seferler",
-        "desc": "Gönderiniz için bireysel direkt seferler  kapıdan kapıya, ara durak yok."
+        "desc": "Gönderiniz için bireysel direkt seferler – kapıdan kapıya, ara durak yok."
       },
       "paket": {
         "title": "Paket ve Evrak Taşımacılığı",
@@ -48,7 +45,7 @@
       },
       "adr": {
         "title": "ADR Tehlikeli Madde Taşımacılığı",
-        "desc": "ADR yönetmeliklerine uygun sertifikalı tehlikeli madde taşımacılığı  güvenli ve uyumlu."
+        "desc": "ADR yönetmeliklerine uygun sertifikalı tehlikeli madde taşımacılığı – güvenli ve uyumlu."
       },
       "zeitkritisch": {
         "title": "Zamana Duyarlı Özel Taşımacılık",
@@ -60,7 +57,7 @@
       },
       "deutschlandweit": {
         "title": "Ülke Çapında Teslimat",
-        "desc": "Almanya genelinde güvenilir teslimat  hızlı, takip edilebilir ve güvenli."
+        "desc": "Almanya genelinde güvenilir teslimat – hızlı, takip edilebilir ve güvenli."
       }
     },
     "whyUs": {
@@ -75,11 +72,11 @@
         },
         "insured": {
           "title": "Tam sigortalı",
-          "desc": "Tüm taşımalar kapsamlı sorumluluk sigortası ile güvence altındadır."
+          "desc": "Tüm taşımalar nakliyeci sorumluluk sigortamız kapsamında güvence altındadır."
         },
         "scalable": {
           "title": "Ölçeklenebilir ve esnek",
-          "desc": "Tekli gönderilerden özel görevlere kadar  ihtiyaçlarınıza göre uyarlanır."
+          "desc": "Tekli gönderilerden özel görevlere kadar – ihtiyaçlarınıza göre uyarlanır."
         },
         "compliant": {
           "title": "KVKK/GDPR uyumlu",
@@ -90,12 +87,10 @@
     "clients": {
       "label": "İş Ortaklarımız",
       "title": "Önde gelen lojistik firmalarıyla çalışıyoruz",
-      "inProgress": "Devam Ediyor",
       "desc": "Güvenilir bir alt yüklenici olarak, tanınmış kurye ve lojistik sağlayıcılarıyla iş birliğimizden gurur duyuyoruz."
     },
     "cta": {
       "ready": "Taşımacılık için hazır mısınız?",
-      "title": "2 dakikada teklif isteyin",
       "desc": "Ücretsiz ve bağlayıcı olmayan bir teklif için bizimle iletişime geçin.",
       "button": "Şimdi iletişime geçin",
       "call": "Ara"
@@ -108,9 +103,7 @@
       "titleHighlight": "Ortağınız.",
       "desc": "LM Express; her seferde, her pakette ve her müşteride hız, güvenlik ve güvenilirliği temsil eder.",
       "stats": {
-        "partners": "İş Ortağı",
         "deliveries": "Teslimat",
-        "ontime": "Zamanında",
         "yearsText": "Sektörde faaliyet",
         "years": "Yıllık Tecrübe"
       }
@@ -119,10 +112,10 @@
       "imageText": "Gerçek insanlar, gerçek çözümler.",
       "imageSub": "İlk günden beri kişisel hizmet.",
       "label": "Motivasyonumuz",
-      "title": "Sadece taşımacılıktan fazlası ",
+      "title": "Sadece taşımacılıktan fazlası –",
       "titleHighlight": "Önemli olanı taşıyoruz.",
       "desc1": "LM Express, kurye ve ekspres hizmetlerini daha kişisel ve güvenilir hale getirmek için kuruldu. Sahibi tarafından yönetilen bir işletme olarak, her seferin arkasında adımızla duruyoruz.",
-      "desc2": "Her gönderinin önemli olduğuna inanıyoruz  ister bir evrak, ister bir paket, ister ADR tehlikeli madde olsun. Her gönderiye hak ettiği özeni gösteriyoruz.",
+      "desc2": "Her gönderinin önemli olduğuna inanıyoruz – ister bir evrak, ister bir paket, ister ADR tehlikeli madde olsun. Her gönderiye hak ettiği özeni gösteriyoruz.",
       "visionLabel": "Vizyonumuz",
       "visionDesc": "Bölgenin en güvenilir kurye ve ekspres hizmeti olmak.",
       "scopeLabel": "Kapsam",
@@ -143,7 +136,7 @@
         },
         "partnership": {
           "title": "Ortaklık",
-          "desc": "Kendimizi müşterilerimiz için uzun vadeli bir ortak olarak görüyoruz  sadece bir hizmet sağlayıcısı değil."
+          "desc": "Kendimizi müşterilerimiz için uzun vadeli bir ortak olarak görüyoruz – sadece bir hizmet sağlayıcısı değil."
         },
         "passion": {
           "title": "Tutku",
@@ -155,7 +148,7 @@
       "title": "Yolculuğumuz",
       "m1": {
         "title": "Başlangıç",
-        "desc": "LM Express, Leiblfing'de kuruldu  Vizyon: daha hızlı, daha kişisel bir kurye hizmeti."
+        "desc": "LM Express, Leiblfing'de kuruldu – Vizyon: daha hızlı, daha kişisel bir kurye hizmeti."
       },
       "m2": {
         "title": "Büyüme",
@@ -172,7 +165,8 @@
       "m5": {
         "title": "Gelecek",
         "desc": "Filomuzun ve hizmet alanımızın daha da büyümesi."
-      }
+      },
+      "today": "Bugün"
     },
     "cta": {
       "title": "Bir iş ortaklığına hazır mısınız?",
@@ -185,7 +179,7 @@
     "hero": {
       "label": "Uzmanlığımız",
       "title": "Sizin için profesyonel kurye ve ekspres çözümleri",
-      "desc": "Ekspres seferlerden ADR tehlikeli madde taşımacılığına kadar  LM Express ülke çapında özel kurye çözümleri sunar.",
+      "desc": "Ekspres seferlerden ADR tehlikeli madde taşımacılığına kadar – LM Express ülke çapında özel kurye çözümleri sunar.",
       "button1": "Hemen Teklif İste",
       "button2": "Bize Ulaşın"
     },
@@ -193,7 +187,7 @@
       "express": {
         "title": "Ekspres Seferler",
         "subtitle": "Acil. Hızlı. Güvenli.",
-        "desc": "Zamanın kritik olduğu durumlarda ortağınızız. Ülke çapında acil gönderiler için direkt ekspres seferler  sapma yok.",
+        "desc": "Zamanın kritik olduğu durumlarda ortağınızız. Ülke çapında acil gönderiler için direkt ekspres seferler – sapma yok.",
         "f1": "Anında teslim alma",
         "f2": "Hedefe direkt sefer",
         "f3": "Gerçek zamanlı müsaitlik",
@@ -203,7 +197,7 @@
       "sonderfahrten": {
         "title": "Direkt ve Özel Seferler",
         "subtitle": "İhtiyaçlarınıza özel",
-        "desc": "Özel gereksinimler için bireysel direkt ve özel seferler sunuyoruz  ara durak yok, tam ihtiyacınıza göre.",
+        "desc": "Özel gereksinimler için bireysel direkt ve özel seferler sunuyoruz – ara durak yok, tam ihtiyacınıza göre.",
         "f1": "Sapmasız direkt sefer",
         "f2": "Bireysel planlama",
         "f3": "Kişisel teslim",
@@ -213,7 +207,7 @@
       "paket": {
         "title": "Paket ve Evrak Taşımacılığı",
         "subtitle": "Güvenli ve güvenilir",
-        "desc": "İster önemli evraklar ister her boyutta paketler olsun  gönderilerinizi güvenli ve zamanında taşıyoruz.",
+        "desc": "İster önemli evraklar ister her boyutta paketler olsun – gönderilerinizi güvenli ve zamanında taşıyoruz.",
         "f1": "Ülke çapında teslim alma ve teslimat",
         "f2": "Paketler, evraklar ve küçük gönderiler",
         "f3": "Özenli taşıma",
@@ -223,7 +217,7 @@
       "adr": {
         "title": "ADR Tehlikeli Madde Taşımacılığı",
         "subtitle": "Sertifikalı ve uyumlu",
-        "desc": "Tehlikeli maddeleri geçerli ADR yönetmeliklerine göre taşıyoruz  güvenli, belgeli ve güvenilir.",
+        "desc": "Tehlikeli maddeleri geçerli ADR yönetmeliklerine göre taşıyoruz – güvenli, belgeli ve güvenilir.",
         "f1": "ADR uyumlu işlem",
         "f2": "Eğitimli sürücüler",
         "f3": "Eksiksiz belgelendirme",
@@ -253,7 +247,7 @@
       "deutschlandweit": {
         "title": "Ülke Çapında Teslimat",
         "subtitle": "Almanya'nın her yerinde",
-        "desc": "Alıcınız nerede olursa olsun  Almanya genelinde güvenilir şekilde teslim ediyoruz.",
+        "desc": "Alıcınız nerede olursa olsun – Almanya genelinde güvenilir şekilde teslim ediyoruz.",
         "f1": "Ülke çapında kapsama",
         "f2": "Sabit ve esnek güzergahlar",
         "f3": "Güvenilir teslimat süreleri",
@@ -266,7 +260,7 @@
       "title": "Basit İş Akışı",
       "s1": {
         "title": "Rezervasyon",
-        "desc": "Çevrimiçi veya telefonla teklif isteyin ve gönderinizi ayırtın."
+        "desc": "Teklif isteyin ve gönderinizi telefonla ayırtın."
       },
       "s2": {
         "title": "Teslim Alma",
@@ -293,13 +287,6 @@
     "title": "Teklif Sihirbazı",
     "subtitle": "3 basit adımda size özel lojistik çözümleri.",
     "steps": ["Hizmet", "Detaylar", "İletişim"],
-    "services": {
-      "stueckgut": { "label": "Parsiyel Yük", "desc": "Kısmi ve tam yükler" },
-      "express": { "label": "Ekspres", "desc": "Aynı gün / ertesi gün" },
-      "kuehltransport": { "label": "Soğutmalı Taşıma", "desc": "Sıcaklık kontrollü" },
-      "kurier": { "label": "Kurye", "desc": "Esnek kurye seferleri" },
-      "apotheken": { "label": "Eczane", "desc": "İlaç lojistiği" }
-    },
     "step1": {
       "title": "Hizmet Türünü Seçin",
       "subtitle": "Bugün ne taşıyoruz?",
@@ -319,8 +306,6 @@
       "volumePlaceholder": "örn. 2 m³ veya 120x80x100",
       "palletLabel": "Palet Sayısı",
       "palletPlaceholder": "Kaç adet?",
-      "climateLabel": "Soğuk Zincir Gerekli",
-      "climateDesc": "Sıcaklığa duyarlı yük",
       "notesLabel": "Ek Gereksinimler",
       "notesPlaceholder": "Yükleme talimatları, belirli saatler, vb.",
       "back": "Geri",
@@ -364,7 +349,7 @@
   "contact": {
     "hero": {
       "label": "Bize ulaşın",
-      "title": "Sizin için buradayız ",
+      "title": "Sizin için buradayız –",
       "titleHighlight": "Her Yerde.",
       "desc": "Kurye ve ekspres hizmetlerimiz hakkında sorularınız mı var veya özel bir teklife mi ihtiyacınız var? Size en kısa sürede geri döneceğiz."
     },
@@ -382,6 +367,8 @@
       "submit": "Mesaj Gönder",
       "success": "Mesajınız başarıyla gönderildi!",
       "error": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+      "privacyNote": "Formu göndererek bilgilerinizin talebinizin işlenmesi için kullanılmasını kabul etmiş olursunuz. Ayrıntılı bilgi için:",
+      "privacyLink": "Gizlilik Politikası",
       "errors": {
         "name": "İsim zorunludur",
         "email": "Geçersiz e-posta adresi",
@@ -390,20 +377,22 @@
       }
     },
     "info": {
-      "phone": "Sabit Hat",
       "mobile": "Cep Telefonu",
       "email": "E-posta",
       "location": "Konum",
       "address": "Adres",
-      "hours": "Çalışma Saatleri"
+      "hours": "Çalışma Saatleri",
+      "weekdays": "Pzt–Cum",
+      "weekend": "Cmt–Paz",
+      "mapTitle": "LM Express konumu"
     },
     "faq": {
       "title": "Sıkça sorulan sorular",
       "desc": "En önemli soruların hızlı cevaplarını burada bulun.",
       "q1": "Teklifi ne kadar hızlı alırım?",
-      "a1": "Genellikle çok kısa sürede  kısa vadeli talepler için bile  size özel bir teklifle geri dönüyoruz.",
+      "a1": "Genellikle çok kısa sürede – kısa vadeli talepler için bile – size özel bir teklifle geri dönüyoruz.",
       "q2": "Bavyera dışına teslimat yapıyor musunuz?",
-      "a2": "Evet, ülke çapında teslimat yapıyoruz  ekspres seferlerden özel görevlere kadar.",
+      "a2": "Evet, ülke çapında teslimat yapıyoruz – ekspres seferlerden özel görevlere kadar.",
       "q3": "Gönderilerim sigortalı mı?",
       "a3": "Evet, tüm taşımalar nakliyeci sorumluluk sigortamız kapsamında güvence altındadır.",
       "q4": "Tehlikeli madde de taşıyor musunuz?",
@@ -415,7 +404,8 @@
       "button1": "Hemen ara",
       "button2": "E-posta yaz"
     },
-    "whatsappMessage": "Merhaba, kurye ve ekspres hizmetlerinizle ilgileniyorum ve bir teklif almak istiyorum."
+    "whatsappMessage": "Merhaba, kurye ve ekspres hizmetlerinizle ilgileniyorum ve bir teklif almak istiyorum.",
+    "whatsappAria": "WhatsApp ile iletişime geçin"
   },
   "footer": {
     "cta": {
@@ -431,27 +421,24 @@
     "privacy": "Gizlilik Politikası",
     "labels": {
       "mobile": "Cep Telefonu",
-      "phone": "Sabit Hat",
       "email": "E-posta",
       "address": "Adres"
-    },
-    "servicesList": {
-      "s1": "Ekspres Seferler",
-      "s2": "Direkt ve Özel Seferler",
-      "s3": "Paketler ve Evraklar",
-      "s4": "ADR Tehlikeli Madde",
-      "s5": "Zamana Duyarlı Özel Taşımacılık",
-      "s6": "3,5 Tona Kadar Taşımacılık",
-      "s7": "Ülke Çapında Teslimat"
     }
+  },
+  "notFound": {
+    "label": "Sayfa bulunamadı",
+    "desc": "Aradığınız sayfa mevcut değil veya taşınmış.",
+    "button": "Ana Sayfaya Dön"
+  },
+  "loader": {
+    "loading": "Yükleniyor..."
   },
   "impressum": {
     "backHome": "Ana Sayfaya Dön",
     "title": "Yasal Uyarı",
-    "subtitle": "§ 5 TMG (Alman Telemedya Yasası) uyarınca bilgiler",
+    "subtitle": "§ 5 DDG (Alman Dijital Hizmetler Yasası) uyarınca bilgiler",
     "contactAddress": "İletişim ve Adres",
     "management": "İşletme Sahibi",
-    "managementDesc": "İşletme Sahibi: Ufuk Enez",
     "taxId": "Vergi Kimlik Bilgileri",
     "taxIdDesc": "KDV Numarası: talep üzerine mevcut\nVergi Numarası: talep üzerine mevcut\nYetkili Vergi Dairesi: talep üzerine mevcut",
     "contact": "İletişim Bilgileri",
