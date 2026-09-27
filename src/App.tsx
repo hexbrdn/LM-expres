@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import ScrollToTop from "./components/ScrollToTop";
+import PageTitle from "./components/PageTitle";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import PageLoader from "./components/PageLoader";
@@ -32,6 +33,7 @@ const App = () => (
         }}
       >
         <ScrollToTop />
+        <PageTitle />
         <Navigation />
         <Routes>
           <Route path="/" element={<Index />} />

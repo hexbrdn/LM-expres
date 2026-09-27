@@ -1,5 +1,5 @@
 ﻿import { Link, useLocation } from "react-router-dom";
-import { Package, Zap, Route, AlertTriangle, Timer, Truck, MapPinned, CheckCircle2, ArrowRight, ShieldCheck, Clock } from "lucide-react";
+import { Package, Zap, CheckCircle2, ArrowRight, ShieldCheck, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
@@ -10,8 +10,9 @@ export default function Leistungen() {
 
   const services = [
     {
-      icon: Zap,
-      image: "/express-transport-service.png",
+      icon: "/icons/service-express.png",
+      image: "/services/express.jpg",
+      key: "express",
       id: "expressfahrten",
       title: t("services.items.express.title"),
       subtitle: t("services.items.express.subtitle"),
@@ -25,8 +26,9 @@ export default function Leistungen() {
       ],
     },
     {
-      icon: Route,
-      image: "/kurier-taxi-service.png",
+      icon: "/icons/service-sonderfahrten.png",
+      image: "/services/sonderfahrten.jpg",
+      key: "sonderfahrten",
       id: "direkt-sonderfahrten",
       title: t("services.items.sonderfahrten.title"),
       subtitle: t("services.items.sonderfahrten.subtitle"),
@@ -40,8 +42,9 @@ export default function Leistungen() {
       ],
     },
     {
-      icon: Package,
-      image: "/stueckgut-transport-service.png",
+      icon: "/icons/service-paket.png",
+      image: "/services/paket.jpg",
+      key: "paket",
       id: "paket-dokumente",
       title: t("services.items.paket.title"),
       subtitle: t("services.items.paket.subtitle"),
@@ -55,8 +58,9 @@ export default function Leistungen() {
       ],
     },
     {
-      icon: AlertTriangle,
-      image: "/kuehltransport-service.png",
+      icon: "/icons/service-adr.png",
+      image: "/services/adr.jpg",
+      key: "adr",
       id: "adr-gefahrgut",
       title: t("services.items.adr.title"),
       subtitle: t("services.items.adr.subtitle"),
@@ -70,8 +74,9 @@ export default function Leistungen() {
       ],
     },
     {
-      icon: Timer,
-      image: "/apotheken-lieferung-service.png",
+      icon: "/icons/service-zeitkritisch.png",
+      image: "/services/zeitkritisch.jpg",
+      key: "zeitkritisch",
       id: "zeitkritische-spezialtransporte",
       title: t("services.items.zeitkritisch.title"),
       subtitle: t("services.items.zeitkritisch.subtitle"),
@@ -85,8 +90,9 @@ export default function Leistungen() {
       ],
     },
     {
-      icon: Truck,
-      image: "/stueckgut-transport-service.png",
+      icon: "/icons/service-transport35.png",
+      image: "/services/transport35.jpg",
+      key: "transport35",
       id: "transport-bis-35t",
       title: t("services.items.transport35.title"),
       subtitle: t("services.items.transport35.subtitle"),
@@ -100,8 +106,9 @@ export default function Leistungen() {
       ],
     },
     {
-      icon: MapPinned,
-      image: "/logistics-background-hero.png",
+      icon: "/icons/service-deutschlandweit.png",
+      image: "/services/deutschlandweit.jpg",
+      key: "deutschlandweit",
       id: "deutschlandweite-zustellung",
       title: t("services.items.deutschlandweit.title"),
       subtitle: t("services.items.deutschlandweit.subtitle"),
@@ -158,7 +165,7 @@ export default function Leistungen() {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button asChild className="h-14 px-10 rounded-full bg-gradient-to-r from-sky-blue to-sky-blue-light text-white hover:shadow-sky text-base font-semibold">
-              <Link to="/kontakt">
+              <Link to="/angebot">
                 {t("services.hero.button1")} <ArrowRight className="ml-3 w-5 h-5" />
               </Link>
             </Button>
@@ -186,7 +193,7 @@ export default function Leistungen() {
       <section className="section-padding overflow-hidden">
         <div className="container-main">
           <div className="grid grid-cols-1 gap-20">
-            {services.map(({ icon: Icon, image, id, title, subtitle, desc, features }, idx) => (
+            {services.map(({ icon, image, key, id, title, subtitle, desc, features }, idx) => (
               <div
                 key={id}
                 id={id}
@@ -203,8 +210,8 @@ export default function Leistungen() {
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     </div>
-                    <div className="absolute bottom-6 right-6 w-20 h-20 rounded-full bg-gradient-to-br from-sky-blue to-sky-blue-light flex items-center justify-center shadow-sky">
-                      <Icon className="w-9 h-9 text-white" />
+                    <div className="absolute bottom-6 right-6 w-24 h-24 rounded-full bg-navy-deep flex items-center justify-center shadow-sky ring-4 ring-white">
+                      <img src={icon} alt="" aria-hidden="true" className="w-[80%] h-[80%] object-contain" />
                     </div>
                   </div>
                 </div>
@@ -228,8 +235,8 @@ export default function Leistungen() {
                       </li>
                     ))}
                   </ul>
-                  <Button asChild className="button-modern h-14 px-8 rounded-full bg-gradient-to-r from-sky-blue to-sky-blue-light text-white hover:shadow-sky group/btn">
-                    <Link to="/kontakt">
+                  <Button asChild className="button-modern h-14 px-8 rounded-full bg-gradient-to-r from-sky-blue to-sky-blue-light text-white hover:shadow-sky text-base font-semibold group/btn">
+                    <Link to={`/angebot?service=${key}`}>
                       {t("services.button_quote")}
                       <ArrowRight className="ml-3 w-5 h-5 transition-transform group-hover/btn:translate-x-1" />
                     </Link>

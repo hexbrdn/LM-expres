@@ -4,8 +4,8 @@ export default function Datenschutz() {
   const { t } = useTranslation();
 
   return (
-    <main className="pt-24 bg-surface-light min-h-screen">
-      <section className="bg-navy-deep py-24 relative overflow-hidden">
+    <main className="bg-surface-light min-h-screen">
+      <section className="bg-navy-deep pt-40 pb-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-white/[0.02] bg-[radial-gradient(#ffffff0a_1px,transparent_1px)] [background-size:20px_20px]" />
         <div className="container-main relative z-10">
           <p className="text-sky-blue text-xs font-semibold tracking-wide mb-4">{t("privacy.transparency")}</p>

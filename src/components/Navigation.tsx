@@ -1,6 +1,6 @@
 ﻿import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, Truck, Globe, ArrowRight, Home, Package, Info, Users, Mail } from "lucide-react";
+import { Menu, X, Phone, Globe, ArrowRight, Home, Package, Info, Mail } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "./ui/button";
 import {
@@ -51,7 +51,7 @@ export default function Navigation() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${headerActive
+        className={`fixed top-0 left-0 right-0 z-50 transition-[padding,box-shadow] duration-500 ${headerActive
           ? "glass-morphism py-3 shadow-sm"
           : "bg-transparent py-5 max-lg:glass-morphism max-lg:py-3 max-lg:shadow-sm"
           }`}
@@ -60,10 +60,10 @@ export default function Navigation() {
           {/* Logo */}
           <Link to="/" className="flex items-center group transition-transform duration-300 hover:scale-105 flex-shrink-0">
             <img
-              src="/lm-express-logo-horizontal.svg"
+              src="/lm-express-logo.png"
               alt="LM Express - Kurier & Expressdienst"
-              width="250"
-              height="64"
+              width="512"
+              height="379"
               className="h-16 w-auto object-contain drop-shadow-lg transition-all duration-300"
             />
           </Link>
@@ -76,7 +76,7 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   to={link.href}
-                  className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 flex items-center gap-2 ${location.pathname === link.href
+                  className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-[background-color] duration-300 flex items-center gap-2 ${location.pathname === link.href
                     ? "bg-navy-deep text-white"
                     : headerActive
                       ? "text-navy-deep hover:bg-navy-deep/5"
@@ -95,11 +95,11 @@ export default function Navigation() {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button
-                  className={`flex items-center justify-center h-11 px-4 rounded-full transition-all duration-300 border ${headerActive
+                  className={`flex items-center justify-center h-11 px-4 rounded-full transition-[background-color] duration-300 border ${headerActive
                     ? "border-navy-deep/20 text-navy-deep hover:bg-navy-deep/5"
                     : "border-white/20 text-white hover:bg-white/10"
                     }`}
-                  aria-label="Select language"
+                  aria-label={t("nav.selectLanguage")}
                 >
                   <Globe className="w-4 h-4 mr-2" />
                   <span className="text-sm font-bold uppercase">{currentLang}</span>
@@ -118,8 +118,8 @@ export default function Navigation() {
               </DropdownMenuContent>
             </DropdownMenu>
             <Button asChild className="button-modern bg-gradient-to-r from-sky-blue to-sky-blue-light text-white hover:shadow-sky group h-11 px-7">
-              <Link to="/kontakt">
-                {t("nav.contact")}
+              <Link to="/angebot">
+                {t("services.button_quote")}
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </Button>
@@ -129,7 +129,8 @@ export default function Navigation() {
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className={`lg:hidden p-2.5 rounded-xl transition-colors duration-300 bg-navy-deep text-white shadow-sm`}
-            aria-label="Toggle menu"
+            aria-label={mobileOpen ? t("nav.closeMenu") : t("nav.openMenu")}
+            aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -153,7 +154,7 @@ export default function Navigation() {
                 <DropdownMenuTrigger asChild>
                   <button
                     className="flex items-center justify-center px-3 py-2 rounded-lg bg-navy-deep/5 hover:bg-navy-deep/10 transition-colors text-navy-deep gap-2"
-                    aria-label="Select language"
+                    aria-label={t("nav.selectLanguage")}
                   >
                     <Globe className="w-4 h-4" />
                     <span className="text-sm font-bold uppercase">{currentLang}</span>
@@ -210,8 +211,8 @@ export default function Navigation() {
             </div>
 
             <Button asChild className="w-full bg-gradient-to-r from-sky-blue to-sky-blue-light text-white h-14 rounded-full text-base font-semibold group" onClick={() => setMobileOpen(false)}>
-              <Link to="/kontakt">
-                {t("nav.contact")}
+              <Link to="/angebot">
+                {t("services.button_quote")}
                 <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </Button>

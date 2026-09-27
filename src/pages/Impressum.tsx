@@ -27,15 +27,11 @@ export default function Impressum() {
             <section>
               <h2 className="text-xl font-bold text-navy-deep mb-4">{t("impressum.contactAddress")}</h2>
               <p>
-                Ufuk Enez<br />
+                <strong className="text-navy-deep">LM Express</strong><br />
+                {t("impressum.management")}: Ufuk Enez<br />
                 Hauptstraße 26<br />
                 94339 Leiblfing
               </p>
-            </section>
-
-            <section>
-              <h2 className="text-xl font-bold text-navy-deep mb-4">{t("impressum.management")}</h2>
-              <p>{t("impressum.managementDesc")}</p>
             </section>
 
             <section>

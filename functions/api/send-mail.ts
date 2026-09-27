@@ -48,9 +48,6 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
                 user: SMTP_USER,
                 pass: SMTP_PASS,
             },
-            tls: {
-                rejectUnauthorized: false
-            }
         });
 
         const mailOptions = {
@@ -81,7 +78,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     } catch (error: unknown) {
         const errorMessage = error instanceof Error ? error.message : "Unknown error";
         console.error("SMTP Error:", errorMessage);
-        return new Response(JSON.stringify({ error: "Failed to send: " + errorMessage }), {
+        return new Response(JSON.stringify({ error: "Failed to send email" }), {
             status: 500,
             headers: { "Content-Type": "application/json" }
         });

@@ -34,9 +34,6 @@ export default async function handler(req: { method: string, body: SendMailReque
             user: process.env.SMTP_USER,
             pass: process.env.SMTP_PASS,
         },
-        tls: {
-            rejectUnauthorized: false
-        }
     });
 
     const mailOptions = {
