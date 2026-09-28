@@ -50,7 +50,8 @@ export default function Kontakt() {
         },
         body: JSON.stringify({
           ...data,
-          type: 'contact'
+          type: 'contact',
+          lang: i18n.language,
         }),
       });
 

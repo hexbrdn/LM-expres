@@ -98,7 +98,7 @@ const primaryButtonClass = "h-14 px-10 rounded-full bg-gradient-to-r from-sky-bl
 const backButtonClass = "h-14 px-8 rounded-full border-2 text-base font-semibold gap-2";
 
 export default function Angebot() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [searchParams] = useSearchParams();
   const [step, setStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
@@ -190,12 +190,9 @@ export default function Angebot() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          name: finalData.contactPerson,
-          email: finalData.email,
-          subject: `New Quote Request: ${finalData.serviceType}`,
-          message: `Service: ${finalData.serviceType}\nFrom: ${finalData.pickupLocation}\nTo: ${finalData.deliveryLocation}\nWeight: ${finalData.weight}`,
+          ...finalData,
           type: 'quote',
-          ...finalData
+          lang: i18n.language,
         }),
       });
 

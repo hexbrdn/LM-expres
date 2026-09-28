@@ -1,13 +1,5 @@
 import nodemailer from 'nodemailer';
-
-function escapeHtml(value: unknown): string {
-    return String(value ?? '')
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;');
-}
+import { buildMail } from '../../server/mail';
 
 interface Env {
     SMTP_HOST: string;
@@ -17,70 +9,37 @@ interface Env {
     VITE_CONTACT_EMAIL: string;
 }
 
-interface RequestBody {
-    name: string;
-    email: string;
-    subject: string;
-    message: string;
-    type: string;
-    [key: string]: unknown;
-}
+const json = (data: unknown, status = 200) =>
+    new Response(JSON.stringify(data), { status, headers: { "Content-Type": "application/json" } });
 
-export const onRequestPost: PagesFunction<Env> = async (context) => {
-    const { request, env } = context;
+export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
+    let body: unknown;
+    try {
+        body = await request.json();
+    } catch {
+        return json({ error: "Invalid request" }, 400);
+    }
 
-    // Cloudflare Environment variables
-    const SMTP_HOST = env.SMTP_HOST;
-    const SMTP_PORT = env.SMTP_PORT || "587";
-    const SMTP_USER = env.SMTP_USER;
-    const SMTP_PASS = env.SMTP_PASS;
-    const TO_EMAIL = env.VITE_CONTACT_EMAIL || "lm2024express@gmail.com";
+    const result = buildMail(body, env);
+    if (result.kind === "error") return json({ error: result.error }, result.status);
+    if (result.kind === "skip") return json({ success: true });
+
+    const port = env.SMTP_PORT || "587";
+    const transporter = nodemailer.createTransport({
+        host: env.SMTP_HOST,
+        port: Number(port),
+        secure: port === "465",
+        auth: {
+            user: env.SMTP_USER,
+            pass: env.SMTP_PASS,
+        },
+    });
 
     try {
-        const body = await request.json() as RequestBody;
-        const { name, email, subject, message, type, ...details } = body;
-
-        const transporter = nodemailer.createTransport({
-            host: SMTP_HOST,
-            port: Number(SMTP_PORT),
-            secure: SMTP_PORT === "465",
-            auth: {
-                user: SMTP_USER,
-                pass: SMTP_PASS,
-            },
-        });
-
-        const mailOptions = {
-            from: `"${name}" <${SMTP_USER}>`,
-            to: TO_EMAIL,
-            replyTo: email,
-            subject: `[${type?.toUpperCase()}] ${subject}`,
-            text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}\n\nDetails:\n${JSON.stringify(details, null, 2)}`,
-            html: `
-        <h2>New Message from ${escapeHtml(name)}</h2>
-        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-        <p><strong>Type:</strong> ${escapeHtml(type)}</p>
-        <p><strong>Subject:</strong> ${escapeHtml(subject)}</p>
-        <br/>
-        <p><strong>Message:</strong></p>
-        <p>${message ? escapeHtml(message).replace(/\n/g, '<br>') : ''}</p>
-        <hr/>
-        <pre>${escapeHtml(JSON.stringify(details, null, 2))}</pre>
-      `,
-        };
-
-        await transporter.sendMail(mailOptions);
-
-        return new Response(JSON.stringify({ success: true }), {
-            headers: { "Content-Type": "application/json" }
-        });
-
+        await transporter.sendMail(result.mail);
+        return json({ success: true });
     } catch (error: unknown) {
-        const errorMessage = error instanceof Error ? error.message : "Unknown error";
-        console.error("SMTP Error:", errorMessage);
-        return new Response(JSON.stringify({ error: "Failed to send email" }), {
-            status: 500,
-            headers: { "Content-Type": "application/json" }
-        });
+        console.error("SMTP Error:", error instanceof Error ? error.message : "Unknown error");
+        return json({ error: "Failed to send email" }, 500);
     }
 };
