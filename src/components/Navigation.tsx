@@ -28,7 +28,7 @@ export default function Navigation() {
     i18n.changeLanguage(code);
   };
 
-  const isLightPage = location.pathname === "/datenschutz" || location.pathname === "/impressum";
+  const isLightPage = ["/datenschutz", "/impressum", "/ueber-uns"].includes(location.pathname);
   const headerActive = scrolled || isLightPage;
 
   const navLinks = [

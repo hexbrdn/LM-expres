@@ -1,5 +1,5 @@
 ﻿import { Link } from "react-router-dom";
-import { Shield, Award, Users, Heart, ArrowRight, History, Target, Sparkles, Globe } from "lucide-react";
+import { Shield, Award, Users, Heart, ArrowRight, History, Target, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
@@ -39,84 +39,8 @@ export default function UeberUns() {
 
   return (
     <main className="bg-white min-h-screen">
-      {/*  HERO SECTION - Immersive Design  */}
-      <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-navy-deep">
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-sky-blue/15 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-sky-blue/5 rounded-full blur-[140px] -translate-x-1/4 translate-y-1/4" />
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay" />
-        </div>
-
-        <div className="container-main relative z-10 py-32 lg:py-40">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
-            <div className="max-w-2xl animate-fade-in">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-8 shadow-lg">
-                <Sparkles className="w-4 h-4 text-sky-blue" />
-                <span className="text-white text-xs font-bold uppercase tracking-[0.2em]">
-                  {t("about.hero.label")}
-                </span>
-              </div>
-              <h1 className="display-heading text-white mb-8 leading-[1.05] lg:text-5xl break-words hyphens-auto">
-                {t("about.hero.title")} <br />
-                <span className="text-sky-blue">{t("about.hero.titleHighlight")}</span>
-              </h1>
-              <p className="text-white/60 text-xl font-normal leading-relaxed mb-10">
-                {t("about.hero.desc")}
-              </p>
-
-              <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/10">
-                <div>
-                  <div className="text-3xl font-bold text-white mb-1">500+</div>
-                  <div className="text-sm text-white/60">{t("home.hero.customers")}</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-white mb-1">10k+</div>
-                  <div className="text-sm text-white/60">{t("about.hero.stats.deliveries")}</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-white mb-1">100%</div>
-                  <div className="text-sm text-white/60">{t("home.hero.reliability")}</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative hidden lg:block animate-slide-in-right">
-              <div className="relative z-10 rounded-[3rem] overflow-hidden border-8 border-white/5 shadow-2xl skew-x-1 hover:skew-x-0 transition-transform duration-700">
-                <img
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
-                  alt="LM Express Logistiklager"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
-              </div>
-              {/* Floating element */}
-              <div className="absolute z-20 -bottom-16 -left-10 bg-white p-8 rounded-[2rem] shadow-2xl animate-bounce-slow">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-sky-blue/10 flex items-center justify-center text-sky-blue font-bold">15+</div>
-                  <div>
-                    <div className="text-navy-deep font-bold text-sm">{t("about.hero.stats.years")}</div>
-                    <div className="text-navy-deep/40 text-xs">{t("about.hero.stats.yearsText")}</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Wave Shape at Bottom */}
-        <div className="absolute bottom-[-1px] left-0 right-0 h-32 z-[5]">
-          <svg className="w-full h-full block" viewBox="0 0 1440 120" preserveAspectRatio="none">
-            <path
-              d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-      </section>
-
       {/*  VISION & CORE SECTION  */}
-      <section className="section-padding bg-white relative">
+      <section className="section-padding pt-36 lg:pt-44 bg-white relative">
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-24 items-center mb-32">
             <div className="order-2 lg:order-1">
@@ -141,10 +65,10 @@ export default function UeberUns() {
             <div className="order-1 lg:order-2 space-y-10">
               <div className="space-y-6">
                 <span className="text-sky-blue text-xs font-black uppercase tracking-[0.4em] block">{t("about.vision.label")}</span>
-                <h2 className="section-heading text-navy-deep text-4xl md:text-5xl leading-tight">
+                <h1 className="section-heading text-navy-deep text-4xl md:text-5xl leading-tight">
                   {t("about.vision.title")} <br />
                   <span className="text-navy-deep/30">{t("about.vision.titleHighlight")}</span>
-                </h2>
+                </h1>
                 <div className="space-y-6 text-navy-deep/60 text-lg leading-relaxed">
                   <p>
                     {t("about.vision.desc1")}
