@@ -10,9 +10,7 @@ import {
   Loader2,
   MapPin,
   Weight,
-  Box,
   PlusCircle,
-  Info,
   FileText,
   Building2,
   User,
@@ -41,7 +39,6 @@ type Step2 = {
   pickupLocation: string;
   deliveryLocation: string;
   weight: string;
-  volume?: string;
   palletCount?: string;
   additionalNotes?: string;
 };
@@ -50,7 +47,6 @@ type Step3 = {
   contactPerson: string;
   email: string;
   phone: string;
-  vatId?: string;
   honeypot: string;
 };
 
@@ -126,7 +122,6 @@ export default function Angebot() {
     pickupLocation: z.string().trim().min(3, t("quote.step2.errors.pickup")).max(200),
     deliveryLocation: z.string().trim().min(3, t("quote.step2.errors.delivery")).max(200),
     weight: z.string().trim().min(1, t("quote.step2.errors.weight")).max(20),
-    volume: z.string().trim().max(20).optional(),
     palletCount: z.string().trim().max(10).optional(),
     additionalNotes: z.string().trim().max(500).optional(),
   });
@@ -136,7 +131,6 @@ export default function Angebot() {
     contactPerson: z.string().trim().min(2, t("quote.step3.errors.contact")).max(100),
     email: z.string().trim().email(t("quote.step3.errors.email")).max(255),
     phone: z.string().trim().min(6, t("quote.step3.errors.phone")).max(30),
-    vatId: z.string().trim().max(30).optional(),
     honeypot: z.string().max(0, "Bot detected"),
   });
 
@@ -151,7 +145,6 @@ export default function Angebot() {
       pickupLocation: formData.pickupLocation || "",
       deliveryLocation: formData.deliveryLocation || "",
       weight: formData.weight || "",
-      volume: formData.volume || "",
       palletCount: formData.palletCount || "",
       additionalNotes: formData.additionalNotes || "",
     },
@@ -164,7 +157,6 @@ export default function Angebot() {
       contactPerson: formData.contactPerson || "",
       email: formData.email || "",
       phone: formData.phone || "",
-      vatId: formData.vatId || "",
       honeypot: "",
     },
   });
@@ -354,19 +346,6 @@ export default function Angebot() {
                       </div>
 
                       <div className="space-y-3">
-                        <Label htmlFor="volume" className={labelClass}>{t("quote.step2.volumeLabel")}</Label>
-                        <div className="relative group">
-                          <Box className={iconClass} />
-                          <Input
-                            id="volume"
-                            {...form2.register("volume")}
-                            className={inputClass}
-                            placeholder={t("quote.step2.volumePlaceholder")}
-                          />
-                        </div>
-                      </div>
-
-                      <div className="space-y-3">
                         <Label htmlFor="palletCount" className={labelClass}>{t("quote.step2.palletLabel")}</Label>
                         <div className="relative group">
                           <PlusCircle className={iconClass} />
@@ -387,7 +366,7 @@ export default function Angebot() {
                         <Textarea
                           id="additionalNotes"
                           {...form2.register("additionalNotes")}
-                          className="min-h-[140px] pl-12 rounded-2xl bg-surface-light border-transparent focus:border-sky-blue focus:ring-4 focus:ring-sky-blue/10 font-bold p-6 transition-all"
+                          className="min-h-[140px] rounded-2xl bg-surface-light border-transparent focus:border-sky-blue focus:ring-4 focus:ring-sky-blue/10 font-bold p-6 pl-12 transition-all"
                           placeholder={t("quote.step2.notesPlaceholder")}
                         />
                       </div>
@@ -473,19 +452,6 @@ export default function Angebot() {
                           />
                         </div>
                         {form3.formState.errors.phone && <p className={errorClass}>{form3.formState.errors.phone.message}</p>}
-                      </div>
-
-                      <div className="space-y-3">
-                        <Label htmlFor="vatId" className={labelClass}>{t("quote.step3.vatLabel")}</Label>
-                        <div className="relative group">
-                          <Info className={iconClass} />
-                          <Input
-                            id="vatId"
-                            {...form3.register("vatId")}
-                            className={inputClass}
-                            placeholder={t("quote.step3.vatPlaceholder")}
-                          />
-                        </div>
                       </div>
                     </div>
 

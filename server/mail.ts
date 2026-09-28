@@ -12,8 +12,8 @@ const LANGUAGES: Record<string, string> = { de: "Deutsch", en: "Englisch", tr: "
 
 const CONTACT_FIELDS = ["name", "email", "subject", "message"];
 const QUOTE_FIELDS = [
-  "serviceType", "pickupLocation", "deliveryLocation", "weight", "volume", "palletCount",
-  "additionalNotes", "companyName", "contactPerson", "email", "phone", "vatId",
+  "serviceType", "pickupLocation", "deliveryLocation", "weight", "palletCount",
+  "additionalNotes", "companyName", "contactPerson", "email", "phone",
 ];
 
 const escapeHtml = (value: string) =>
@@ -78,7 +78,6 @@ export function buildMail(body: unknown, env: MailEnv): MailResult {
     ...(type === "quote" ? [["Firma", f.companyName] as [string, string]] : []),
     ["E-Mail", f.email],
     ...(type === "quote" ? [["Telefon", f.phone] as [string, string]] : []),
-    ...(type === "quote" && f.vatId ? [["USt-IdNr.", f.vatId] as [string, string]] : []),
     ["Sprache der Website", lang],
   ];
 
@@ -88,7 +87,6 @@ export function buildMail(body: unknown, env: MailEnv): MailResult {
         ["Abholort", f.pickupLocation],
         ["Zielort", f.deliveryLocation],
         ["Gewicht", f.weight],
-        ["Volumen", f.volume],
         ["Paletten", f.palletCount],
       ].filter(([, v]) => v) as [string, string][]
     : [["Betreff", f.subject]];
