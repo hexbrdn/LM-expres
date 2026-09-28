@@ -12,17 +12,22 @@ const resources = {
 
 const STORAGE_KEY = 'lm-language';
 
-// Restore the language the visitor picked last time (storage can be blocked)
-const getStoredLanguage = () => {
+const isSupported = (lng: string | null | undefined): lng is keyof typeof resources =>
+  !!lng && lng in resources;
+
+// Last picked language, else the browser language, else German (storage can be blocked)
+const getInitialLanguage = () => {
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
-    return stored && stored in resources ? stored : 'de';
+    if (isSupported(stored)) return stored;
   } catch {
-    return 'de';
+    // ignore
   }
+  const browser = navigator.language?.slice(0, 2).toLowerCase();
+  return isSupported(browser) ? browser : 'de';
 };
 
-const initialLanguage = getStoredLanguage();
+const initialLanguage = getInitialLanguage();
 document.documentElement.lang = initialLanguage;
 
 i18n

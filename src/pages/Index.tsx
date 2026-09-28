@@ -161,11 +161,17 @@ export default function Index() {
         <div className="absolute inset-0 z-0">
           <video
             autoPlay
-            loop
             muted
             playsInline
             poster="/hero-poster.jpg?v=3"
             className="w-full h-full object-cover"
+            onTimeUpdate={(e) => {
+              const v = e.currentTarget;
+              if (v.currentTime >= 4) {
+                v.currentTime = 0;
+                v.play();
+              }
+            }}
           >
             <source src="/background.mp4?v=3" type="video/mp4" />
           </video>

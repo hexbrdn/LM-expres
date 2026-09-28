@@ -57,7 +57,7 @@ export default function UeberUns() {
                   {t("about.hero.label")}
                 </span>
               </div>
-              <h1 className="display-heading text-white mb-8 leading-[1.05]">
+              <h1 className="display-heading text-white mb-8 leading-[1.05] lg:text-5xl break-words hyphens-auto">
                 {t("about.hero.title")} <br />
                 <span className="text-sky-blue">{t("about.hero.titleHighlight")}</span>
               </h1>

@@ -129,8 +129,8 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="border-t border-white/5 pt-8 pb-24 md:pb-8">
-        <div className="container-main md:pr-24 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium tracking-wide text-white/30">
+      <div className="border-t border-white/5 pt-8 pb-24">
+        <div className="container-main flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium tracking-wide text-white/30">
           <p>© {currentYear} LM Express. {t("footer.rights")}</p>
           <div className="flex items-center gap-6">
             <Link to="/impressum" className="hover:text-white transition-colors">{t("footer.impressum")}</Link>
