@@ -13,9 +13,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 const PARTNERS = [
-  { src: "/logos/transoflex.png", alt: "Transoflex" },
-  { src: "/logos/go-express-logistics.png", alt: "GO! Express & Logistics" },
-  { src: "/logos/dpd.png", alt: "DPD" },
+  { src: "/logos/transoflex.png?v=2", alt: "Transoflex" },
+  { src: "/logos/go-express-logistics.png?v=2", alt: "GO! Express & Logistics" },
+  { src: "/logos/dpd.png?v=2", alt: "DPD" },
 ];
 
 export default function Index() {
@@ -380,12 +380,12 @@ export default function Index() {
                 {Array.from({ length: 3 }).flatMap((_, round) =>
                   PARTNERS.map((partner) => (
                     <div key={`${round}-${partner.alt}`} className="px-4 md:px-5">
-                      <div className="flex items-center justify-center h-32 w-64 md:h-40 md:w-80 rounded-2xl bg-surface-light border border-gray-100 p-6 hover:shadow-lg transition-shadow duration-300">
+                      <div className="flex items-center justify-center h-36 w-64 md:h-44 md:w-80 rounded-2xl bg-white border border-gray-100 shadow-sm p-5 md:p-6 hover:shadow-lg transition-shadow duration-300">
                         <img
                           src={partner.src}
                           alt={copy === 0 && round === 0 ? partner.alt : ""}
                           loading="lazy"
-                          className="max-h-20 md:max-h-24 max-w-full w-auto object-contain"
+                          className="h-full w-full object-contain"
                         />
                       </div>
                     </div>
