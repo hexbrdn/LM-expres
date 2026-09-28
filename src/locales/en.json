@@ -121,6 +121,15 @@
       "scopeLabel": "Reach",
       "scopeDesc": "Local focus, nationwide delivery."
     },
+    "certificate": {
+      "label": "Certification",
+      "title": "Prequalified courier, express and parcel provider",
+      "desc": "LM Express is prequalified with the PQ-KEP certification body. The certificate confirms that we meet the requirements of Section 28e(1) of the German Social Code IV (SGB IV) and Article 64 of the EU Procurement Directive, with compliance monitored on an ongoing basis. For our clients, this means working with a vetted, legally compliant subcontractor.",
+      "regNo": "Registration no.",
+      "issued": "Issued on",
+      "view": "View certificate (PDF)",
+      "verify": "Verify in the public PQ register"
+    },
     "values": {
       "label": "Foundation",
       "title": "Values that carry us",

@@ -121,6 +121,15 @@
       "scopeLabel": "Kapsam",
       "scopeDesc": "Yerel odak, ülke çapında teslimat."
     },
+    "certificate": {
+      "label": "Sertifika",
+      "title": "Ön yeterlilik belgeli kurye, ekspres ve paket hizmet sağlayıcısı",
+      "desc": "LM Express, PQ-KEP belgelendirme kuruluşundan ön yeterlilik belgesine sahiptir. Belge, Alman Sosyal Güvenlik Kanunu (SGB IV) § 28e fıkra 1 ile AB İhale Direktifi Madde 64 şartlarını karşıladığımızı onaylar; bu şartlara uyum düzenli olarak denetlenir. Müşterilerimiz için bu, denetlenmiş ve yasal açıdan güvenilir bir alt yükleniciyle çalışmak demektir.",
+      "regNo": "Tescil No.",
+      "issued": "Düzenleme tarihi",
+      "view": "Belgeyi görüntüle (PDF)",
+      "verify": "Herkese açık PQ listesinde doğrula"
+    },
     "values": {
       "label": "Temel İlkeler",
       "title": "Bizi taşıyan değerler",

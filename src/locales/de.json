@@ -121,6 +121,15 @@
       "scopeLabel": "Reichweite",
       "scopeDesc": "Lokaler Fokus, deutschlandweite Zustellung."
     },
+    "certificate": {
+      "label": "Zertifizierung",
+      "title": "Präqualifizierter KEP-Dienstleister",
+      "desc": "LM Express ist bei der PQ-Stelle KEP präqualifiziert. Die Bescheinigung bestätigt, dass wir die Anforderungen aus § 28e Abs. 1 SGB IV und Art. 64 der EU-Vergaberichtlinie erfüllen – die Einhaltung wird laufend überwacht. Für unsere Auftraggeber heißt das: Sie arbeiten mit einem geprüften, rechtssicheren Nachunternehmer.",
+      "regNo": "Registrier-Nr.",
+      "issued": "Ausstellungsdatum",
+      "view": "Bescheinigung ansehen (PDF)",
+      "verify": "Im öffentlichen PQ-Register prüfen"
+    },
     "values": {
       "label": "Fundament",
       "title": "Werte, die uns tragen",

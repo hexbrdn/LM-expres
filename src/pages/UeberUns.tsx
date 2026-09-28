@@ -1,10 +1,12 @@
 ﻿import { Link } from "react-router-dom";
-import { Shield, Award, Users, Heart, ArrowRight, History, Target, Globe } from "lucide-react";
+import { Shield, Award, Users, Heart, ArrowRight, History, Target, Globe, FileText, ShieldCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
+const PQ_ISSUED = new Date(2026, 6, 30);
+
 export default function UeberUns() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const values = [
     {
@@ -95,6 +97,45 @@ export default function UeberUns() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* PQ-KEP certificate */}
+          <div className="rounded-[2.5rem] bg-surface-light border border-gray-100 p-8 md:p-12 grid lg:grid-cols-[auto_1fr_auto] gap-8 lg:gap-12 items-center">
+            <div className="w-24 h-24 rounded-2xl bg-navy-deep text-white flex flex-col items-center justify-center font-black leading-none shadow-xl">
+              <span className="text-2xl tracking-wider">PQ</span>
+              <span className="text-sm text-sky-blue mt-1 tracking-widest">KEP</span>
+            </div>
+
+            <div className="space-y-3">
+              <span className="text-sky-blue text-xs font-black uppercase tracking-[0.4em] block">{t("about.certificate.label")}</span>
+              <h2 className="text-2xl md:text-3xl font-bold text-navy-deep tracking-tight">{t("about.certificate.title")}</h2>
+              <p className="text-navy-deep/60 leading-relaxed">{t("about.certificate.desc")}</p>
+              <dl className="flex flex-wrap gap-x-8 gap-y-1 pt-2 text-sm">
+                <div className="flex gap-2">
+                  <dt className="text-navy-deep/50">{t("about.certificate.regNo")}</dt>
+                  <dd className="font-bold text-navy-deep">KEP010.65528</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="text-navy-deep/50">{t("about.certificate.issued")}</dt>
+                  <dd className="font-bold text-navy-deep">{PQ_ISSUED.toLocaleDateString(i18n.language, { dateStyle: "long" })}</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div className="flex flex-col sm:flex-row lg:flex-col gap-3">
+              <Button asChild className="h-12 px-6 rounded-full bg-gradient-to-r from-sky-blue to-sky-blue-light text-white hover:shadow-sky font-semibold">
+                <a href="/20260730_65528_k_PQ-Bescheinigung.pdf" target="_blank" rel="noopener noreferrer">
+                  <FileText className="mr-2 w-4 h-4" />
+                  {t("about.certificate.view")}
+                </a>
+              </Button>
+              <Button asChild variant="outline" className="h-12 px-6 rounded-full border-2 font-semibold">
+                <a href="https://www.pq-kep.de/pq-public-list" target="_blank" rel="noopener noreferrer">
+                  <ShieldCheck className="mr-2 w-4 h-4" />
+                  {t("about.certificate.verify")}
+                </a>
+              </Button>
             </div>
           </div>
         </div>
